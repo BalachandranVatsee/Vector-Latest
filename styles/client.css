@@ -1,0 +1,121 @@
+
+    .newPadded{
+        padding: 174px 50px;
+      }
+      .newPadded2{
+        padding: 172px 78px;
+      }
+     
+      .imgBox,
+      .imgBox3,
+      .imgBox4,
+       .imgBox7{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+     height: 395px;
+      border: solid 2px #ffdf24;
+      }
+  
+      .imgBox4,
+      .imgBox5,
+      .imgBox2
+      
+     {
+        display: flex;
+        align-items: center;
+      justify-content: center;
+     height:395px;
+      }
+  
+      
+      
+  
+      .commonBox img{
+        cursor: pointer;
+      }
+
+
+      @media screen and (max-width: 767px){
+        .imgBox{
+            height: 175px;
+            border: solid 1px #ffdf24;
+        }
+
+        .imgBox4 {
+            height: 175px; 
+            border: 0;
+        }
+
+        .imgBox3 {
+            height: 175px;
+            border: solid 1px #ffdf24;
+            position: relative;
+    top: -1px;
+    right: 0px;
+        }
+
+        .imgBox2{
+            height: 175px;
+            border: solid 1px #ffdf24;
+            position: relative;
+            top: -1px;
+            right: 1px;
+        }
+
+        .imgBox5{
+          height: 175px;
+    border:0;
+    position: relative;
+    top: -2px;
+    right: 0px;
+        }
+
+        .imgBox7{
+          height: 175px;
+          border: 0;
+        }
+
+       
+      }
+
+      @media screen and (max-width: 767px){
+
+        .yellowStripp{
+            position: absolute!important;
+        }
+        .imgBox img {
+            width: 65%;
+        }
+
+        .imgBox4 img {
+            width: 85%;
+        }
+
+        .imgBox7 img {
+          width: 100%;
+      }
+
+        .imgBox3 img {
+            width: 93%;
+        }
+
+        .imgBox2 img {
+            width: 84%;
+        }
+
+        .imgBox5 img {
+            width: 96%;
+        }
+      }
+
+      @media screen and (max-width: 370px){
+        .imgBox,
+        .imgBox4,
+        .imgBox3,
+        .imgBox2,
+        .imgBox7,
+        .imgBox5{
+            height: 150px;
+        }
+      }

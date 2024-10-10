@@ -1,0 +1,108 @@
+.Tabs .nav>li>a {
+    padding: 0!important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+     color: #ffdf24!important; 
+   background-color: transparent!important;
+}
+
+.Tabs .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent!important;
+}
+
+.alignCenter{
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.square{    
+    height: 170px;
+    width: 100%;
+    border: solid 2px #ffdf24;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: solid 2px #ffdf24;
+}  
+
+.textSectionPadding{
+    padding-left: 35px;
+}
+
+@media screen and (max-width: 767px){
+    .tab-content .workTitile {
+        font-size: 29px;
+        padding: initial;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .square {
+        height: 86px;}
+
+        .alignCenter{
+            display: flex;
+            align-items: start;
+            padding-top: 35px;
+        }
+
+        .textSectionPadding {
+            padding-left: 0px;
+            padding-right: 0;
+        }
+
+        .tab-content .workTitile {
+            font-size: 15px;}
+
+            .tab-content .workDescription {
+                font-size: 14px;
+            }
+
+            .paddingLMob{
+                padding-left: 0;
+            }
+
+            .accordionText {
+                font-size: 26px!important;
+            }
+
+           
+
+}
+
+@media screen and (max-width: 380px){
+
+    .square {
+        height: 86px;
+    }
+
+   
+
+}
+
+
+
+@media screen and (max-width: 370px){
+    .arrowSign {
+        padding: 0 9px!important;
+    }
+
+    .accordionText {
+        font-size: 24px!important;
+    }
+}
+
+@media screen and (max-width: 340px){
+.accordionText {
+    font-size: 22px!important;
+}
+
+.arrowSign {
+    padding: 0 5px!important;
+}
+}
