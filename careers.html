@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+<link href="styles/bootstrap.min.css.map" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+<!-- s -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<head>
+  <link rel="icon" type="images/x-icon" href="images/Vector-Logo.svg">
+    <title>Vector – Careers</title>
+    <!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q7JQV3RHL9');
+</script> -->
+</head>
+<style>
+
+    /* .blackArr::after{
+        content: '';
+        background-image: url(images/black\ underline\ arrow.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 80%;
+        height: 50px;
+        
+    } */
+    .newPadded{
+      padding: 174px 50px;
+    }
+    .newPadded2{
+      padding: 172px 78px;
+    }
+   
+  
+
+    
+
+.errors{
+  margin-bottom: 15px;
+    color: red;
+}   
+
+.imgBox,
+    .imgBox3{
+      display: flex;
+    padding-left: 3%;
+    align-items: center;
+   height: 375px;
+    border: solid 2px #ffdf24;
+    }
+
+    .imgBox4  
+   {
+    display: flex;
+    padding-left: 3%;
+    align-items: center;
+   height:375px;
+    }
+
+    .contactMain{
+      color: #231f20;
+    font-size: 39px;
+    font-style: italic;
+    font-weight: 900;
+    }
+
+    .contactName{
+      font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    }
+
+    .contactNumber{
+      font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    padding-top: 18px; 
+    }
+
+    .contactAddress{
+      font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+    }
+
+    .imgBoxNew{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    border: solid 2px #ffdf24;
+    }
+
+    
+
+    .mapFrame iframe{
+      left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+.writetoUs{
+  font-size: 56px;
+  font-style: italic;
+  color: #231f20;
+  padding-top: 50px;
+    font-weight: 900;
+}
+
+    </style>
+    <body>
+      <div id="cookie-popup" class="cookie-popup">
+        <div class="cookie-content">
+          <div class="col-lg-11 col-md-11 col-sm-10 col-xs-12">
+            <p class="cookieHead">Cookies & Privacy</p>
+            <p class="cookieText">This website uses cookies to ensure you get the best experience on our website.</p>
+      
+            
+              <p class="privacyTxt">By clicking “Accept”, you agree to the use of all of these cookies in accordance with our <a href="privacy.html">Cookie Policy.</a></p>
+      
+          </div>
+    
+          <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 cookiePadding">
+            <div class="cookieButton">
+              <button id="accept-cookie" onclick="acceptCookies()">Accept</button>
+             
+              </div>
+          </div>
+          <span id="close-cookie" onclick="closePopup()">x</span>
+           
+          
+         
+        </div>
+      </div>
+        <div id="headerSection"></div>
+       
+
+          <div class="container" style="padding:150px 0 0 0;">
+            <div style="padding-bottom: 25px;" data-aos="fade-up">
+        
+              
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 imgBox commonBox">
+                  <div>
+                    <p class="contactMain">Business Enquiries</p>
+                    <p class="contactName">shaleen.dsouza<br>@vectorbrands.in</p>
+                    <p class="contactNumber">+91 98201 43295</p>
+                  </div>
+              
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 imgBox4 commonBox">
+                    <div>
+                    <p class="contactMain">Career Enquiries</p>
+                  <p class="contactName">michelle.suradkar<br>@vectorbrands.in</p>
+                  <p class="contactNumber">+91 99673 79257</p>
+                  </div></div>
+                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 imgBox3 commonBox">
+                    <div>
+                    <p class="contactMain">Media Enquiries</p>
+                    <p class="contactName">paul.dueman<br>@vectorbrands.in</p>
+                    <p class="contactNumber">+91 81088 82695</p>
+                    </div></div>
+                
+
+             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 imgBox4 commonBox">
+              <div>
+              <p class="contactMain">Location</p>
+            <p class="contactAddress">#501, Peninsula Towers,<br>Peninsula Corporate Park, Lower Parel,<br>Mumbai 400 013.</p>
+   
+            </div></div>
+
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 imgBoxNew commonBox">
+              <div class="mapFrame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4518.806566332351!2d72.82424308305391!3d18.99718726029708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce8d1e65b791%3A0xb4f3d51f03ce123f!2sKewal%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1662719782788!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div></div>
+<div style="clear: both;"></div>
+            <div style="padding-top: 60px;" >
+              <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+            </div>
+
+            <p class="writetoUs">WRITE TO US</p>
+          
+            <div class="searchDiv" style="margin-top: 2%;">
+                <input type="text" placeholder="Name" id="nameC">
+            </div>
+            <div id="emptyName" class="errors" style="display:none">Field cannot be empty</div>
+
+            <div class="searchDiv">
+                <input type="text" placeholder="Email"  id="emailC">
+            </div>
+            <div id="wrongEmailCat" class="errors" style="display:none">Please enter a valid Email Address.</div>
+
+            <div class="searchDiv">
+                <input type="text" placeholder="Contact Number"  minlength="10" maxlength="10" id="phoneC">
+            </div>
+            <div id="wrongPhoneCat" class="errors" style="display:none">Please enter a valid Contact Number.</div>
+
+            <!-- <div class="searchDivResume">
+            <div style="display: inline-flex;">
+               <span style="padding-right: 12px;">
+                Your resume 
+               </span>
+               <label for="resumeUpload" class="btn resumeBTn">choose file</label>
+<input type="file" id="resumeUpload" style="display: none">
+            </div> 
+            <div style="clear:both ;"></div>
+            </div> -->
+          
+            <div class="submitSec" style="margin-top:16px ;">
+                <button type="submit" class="resumeSubmit" id="submitDetail">Submit</button>
+              </div>
+         
+
+             
+                
+               </div>
+             
+               
+               <div style="padding-top: 60px;" >
+                <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+              </div>
+
+         
+            <div id="footerSection">
+            </div>
+                </div>
+                <div class="yellowStrip">
+                  <p><span>Pace</span> <img src="images/yellowStripArrow.svg"> <span>Preference</span> <img src="images/yellowStripArrow.svg"> <span> Purpose</span> <img src="images/yellowStripArrow.svg"> <span>Performance</span></p>
+                </div>
+
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+    $(function () {
+            $("#footerSection").load("footer.html");
+            $("#headerSection").load("header.html");
+        });
+        
+  AOS.init();
+  AOS.init({
+              duration: 1200,
+              once: false,
+  mirror: true, 
+          });
+  
+
+          $("#submitDetail").click(function(){
+            var nameCat = $("#nameC").val();
+            var emailCat = $("#emailC").val();
+            var phoneCat = $("#phoneC").val();
+            var atposCat = emailCat.indexOf("@")
+            var dotposCat = emailCat.lastIndexOf(".")
+            if(nameCat == ''){
+              $("#emptyName").show();
+            }
+             else if(atposCat<1 || dotposCat<atposCat+2 || dotposCat+2 >= emailCat.length){
+                   $("#wrongEmailCat").show(); 
+            }
+             else if(phoneCat.length !=10){
+                $("#wrongPhoneCat").show(); 
+            }
+           
+            else{
+                $("#wrongEmailCat").hide(); 
+                $("#wrongPhoneCat").hide(); 
+                $("#emptyName").hide();
+                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=flavy.gomes@tiltbrands.in&body=Name:" + nameCat + "%0D%0AContact Number:" + phoneCat + "%0D%0AEmail Id:" + emailCat +"")
+
+             }
+           
+        })
+         
+      </script>
+
+<script src="js/script.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="google-site-verification" content="XhXUeKBMOYnFz1cBSTmZfNsNASQvZKQEnyjZHjPcYK4">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+<link href="styles/bootstrap.min.css.map" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="owlcarouselstyles/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarouselstyles/owl.theme.default.min.css">
+<link href="styles/main.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<head>
+    <link rel="icon" type="images/x-icon" href="images/Vector-Logo.svg">
+    <title>Vector</title>
+    <!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q7JQV3RHL9');
+</script> -->
+</head>
+<style>
+  .panel {
+    -webkit-box-shadow: 0px!important;
+    box-shadow: 0px!important;
+}
+
+.playHover:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+</style>
+<body>
+  <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-content">
+      <div class="col-lg-11 col-md-11 col-sm-10 col-xs-12">
+        <p class="cookieHead">Cookies & Privacy</p>
+        <p class="cookieText">This website uses cookies to ensure you get the best experience on our website.</p>
+  
+        
+          <p class="privacyTxt">By clicking “Accept”, you agree to the use of all of these cookies in accordance with our <a href="privacy.html">Cookie Policy.</a></p>
+  
+      </div>
+
+      <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 cookiePadding">
+        <div class="cookieButton">
+          <button id="accept-cookie" onclick="acceptCookies()">Accept</button>
+         
+          </div>
+      </div>
+      <span id="close-cookie" onclick="closePopup()">x</span>
+       
+      
+     
+    </div>
+  </div>
+  <div id="webView">
+    <nav class="navbar navbar-inverse sticky" id="navbarr">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <a class="vectorLogoW" href="index.html"><img class="vectorLogo" src="images/Vector Logo white.svg" alt="Vector logo" /></a>  
+          </div>
+         
+          <ul class="nav navbar-nav navbar-right">
+            <li class="searchMenu" style="display: none;"><a href="#" class="firstItem" onclick="openNav()"><img src="images/searchWhite.svg"></a></li>
+            <li class="opt"><a href="#" class="secondItem" onclick="openMenu()"><img src="images/Options Icon.svg"></a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <div id="myNav" class="overlay" style="display: none;">
+        <div class="searchOpacity">
+        <a class="overlayLogo"><img src="images/vectorlogo black.svg" alt="Vector logo" /></a> 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content overlaycontentSearch">
+          <div>
+            <div class="searchhh">
+              <input type="search" class="searchBtn" placeholder="Search">
+            </div>
+          </div>
+         
+        </div>
+        </div>
+      </div>
+
+      <div id="menuOverlay" class="overlay">
+        <div class="opacityOverlay">
+          <a class="overlayLogo"><img src="images/vectorlogo black.svg" alt="Vector logo" /></a> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+          <div class="overlay-content optionsoverr">
+            <div class="menuTextOptions">
+             <a href="aboutus.html">About Us</a>
+             <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a  href="values.html">DNA & VALUES</a><br>
+
+             <a href="work.html">WORK</a>
+             <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a href="services.html">SERVICES</a>
+             <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a href="client.html">CLIENTS</a><br>
+            
+             <a href="reachUs.html">REACH US</a>
+             <!-- <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a href="blog.html">BLOG</a> -->
+            </div>
+  
+          
+           
+         
+          </div>
+        </div>
+        
+      </div>
+      
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+         <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+           <li data-target="#myCarousel" data-slide-to="1"></li> 
+           <li data-target="#myCarousel" data-slide-to="2"></li>
+           <li data-target="#myCarousel" data-slide-to="3"></li>
+           <li data-target="#myCarousel" data-slide-to="4"></li>
+           <li data-target="#myCarousel" data-slide-to="5"></li>
+        <!--  <li data-target="#myCarousel" data-slide-to="3"></li> -->
+        </ol> 
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item videoItem active">
+            <div>
+             <video loop="loop" muted="muted" autoplay="autoplay">
+               <source src="videos/workinner/3 - ICICI 50 SEC HD 170124.mp4"/>
+             </video>
+            </div> 
+           
+             <div class="carousel-caption">
+             
+                 
+                 <p class="secondTextCarousel" style="font-size: 80px;">LIVE THE AND LIFE
+                  <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=LiveTheAndLife';">
+                 </p>
+                <img src="images/Path 26 (2).svg" class="downArrow">
+            
+           
+             </div>
+             
+           </div>
+
+           <div class="item videoItem">
+            <div>
+             <video loop="loop" muted="muted" autoplay="autoplay">
+               <source src="videos/workinner/FK_IDLI_20SEC_WITH_SUB.mp4"/>
+             </video>
+            </div> 
+           
+             <div class="carousel-caption">
+            
+                 <p class="secondTextCarousel" style="font-size: 80px;">KUCH KHAAS KAMAO
+                  <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=KuchKhaasKamao';">
+                 </p>
+                <img src="images/Path 26 (2).svg" class="downArrow">
+            
+           
+             </div>
+             
+           </div>
+
+           <div class="item videoItem">
+            <div>
+             <video loop="loop" muted="muted" autoplay="autoplay">
+               <source src="videos/workinner/Absorbable Stent.mp4"/>
+             </video>
+            </div> 
+           
+             <div class="carousel-caption">
+            
+                 <p class="secondTextCarousel" style="font-size: 80px;">TREATMENT ZAROORI HAI
+                  <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=TreatmentZarooriHai';">
+                 </p>
+                <img src="images/Path 26 (2).svg" class="downArrow">
+            
+           
+             </div>
+             
+           </div>
+
+          <div class="item videoItem">
+           <div>
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/GUJARAT TITANSX2 (1).mp4"/>
+            </video>
+           </div> 
+          
+            <div class="carousel-caption">
+            
+                <p class="firstTextCarousel">Gujarat Titans</p>
+                <p class="secondTextCarousel">AAVA DE&nbsp;
+                 <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=GujratTitans';">
+                </p>
+               <img src="images/Path 26 (2).svg" class="downArrow">
+           
+          
+            </div>
+            
+          </div>
+
+          <div class="item videoItem">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/for Vector Website - SRK(LOOP X 3).mp4">
+              </video>
+              <div class="carousel-caption">
+                <p class="firstTextCarouselPlayR">A23 Games</p>
+                <p class="secondTextCarouselPlayR">PLAY RESPONSIBLY&nbsp;
+                  <span class=""><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=PlayResponsibly';"></span>
+                  </p>
+               <img src="images/Path 26 (2).svg" class="downArrowBigPlayR">
+              </div>
+          </div> 
+      
+          <!-- <div class="item videoItem">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/TVSX2.mp4"/>
+            </video>
+            <div class="carousel-caption">
+              <p class="firstTextCarouselBig">A23 Games</p>
+              <p class="secondTextCarouselBig">CHALO SAATH KHELEIN&nbsp;
+                <span class="relativeSpan"><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=ChaloSaathKhelein';"></span>
+                </p>
+             <img src="images/Path 26 (2).svg" class="downArrowBig">
+            </div>
+          </div> -->
+      
+          <div class="item videoItem">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/for Vector Website - MSD(LOOP X 3).mp4"/>
+            </video>
+          
+            <div class="carousel-caption" >
+            
+                <p class="firstTextCarouselBigTVS">TVS Tyres</p>
+                <p class="secondTextCarouselBig">WHISTLE THROUGH EVERY TURN&nbsp;
+                  <span class="relativeSpan"><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=TVS';"></span>
+                </p>
+               <img src="images/Path 26 (2).svg" class="downArrowBigTVS">
+           
+          
+            </div>
+          </div> 
+
+      
+        </div>
+      
+        <!-- Left and right controls -->
+        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+
+
+      <div class="yellowStrip">
+        <p><span>Pace</span> <img src="images/yellowStripArrow.svg"> <span>Preference</span> <img src="images/yellowStripArrow.svg"> <span> Purpose</span> <img src="images/yellowStripArrow.svg"> <span>Performance</span></p>
+      </div>
+
+      <div style="background-color:#ffffff ;position: absolute;width: 100%;">
+   
+      <div class="container" style="padding: 0;">
+        <p class="sectionHeaderFirst" data-aos="fade-up" style="line-height: .9;padding-top: 75px;">
+          WE ARE A BRAND-FIRST FULL FUNNEL CREATIVE AGENCY FOR PRIMARILY ONLINE, EARLY-STAGE BUSINESSES.
+        </p>
+
+        <p class="newAngle" data-aos="fade-up" data-aos-delay="100"> We partner with brands and businesses, who want to sell more & sell better in an online marketplace.</p>
+
+       
+        
+
+          <div style="padding-top: 60px;" >
+            <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+          </div>
+
+        
+          <p class="sectionHeader" data-aos="fade-up" data-aos-delay="500">OUR BELIEF</p>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+
+             <div data-aos="fade-up" data-aos-delay="600">
+              <div class="accordionText accordionTextYellow"  style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#pace">PACE
+                <a ></a>
+              </div>
+              <div class="arrowSign">
+                <img src="images/smallArrow.svg">
+              </div>
+
+              <div class="accordionText" style="float: left;"  data-toggle="collapse" data-parent="#accordion" data-target="#performance">
+             PERFORMANCE
+              </div>
+              <div style="clear: both;"></div>
+
+    
+             
+              <div class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#preference">
+          PREFERENCE
+                
+              </div>
+              <div class="arrowSign">
+                <img src="images/smallArrow.svg">
+              </div>
+              <div class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#purpose" >PURPOSE
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            </h4>
+          </div>
+   
+          <div id="pace" class="panel-collapse collapse in">
+            <div class="panel-body" data-aos="fade-up" data-aos-delay="200">
+              For today’s finger scrolling, #TagTrending, in the moment consumer, we understand that speed and agility is 
+              key to maximizing and leveraging brand & business impact opportunities </div>
+          </div>
+
+          <div id="performance" class="panel-collapse collapse">
+            <div class="panel-body" data-aos="fade-up" data-aos-delay="200">Brand initiatives are directly measured
+
+              by ROMI and you cannot improve what
+              
+              you do not measure. We deliver
+              
+              strategic goal based solutions in a
+              
+              scientific, transparent and measurable
+              
+              manner.</div>
+          </div>
+
+          <div id="preference" class="panel-collapse collapse">
+            <div class="panel-body" data-aos="fade-up" data-aos-delay="200">In a world of near infinite choices and
+
+              dwindling differentiation, we believe
+              
+              that creatively distinct brand narratives
+              
+              and interventions build & sustain
+              
+              positive consumer mental availability.</div>
+          </div>
+
+          <div id="purpose" class="panel-collapse collapse">
+            <div class="panel-body" data-aos="fade-up" data-aos-delay="200">Brand purpose is key for today’s
+
+              consumers’ who are relentlessly seeking
+              
+              meaning through their purchases. We
+              
+              ensure that the brand credo is reflected
+              
+              undiluted through the funnel. </div>
+          </div>
+        </div>
+       
+       
+      </div> 
+
+  
+      <div style="padding-top: 60px;">
+        <img src="images/yellowLinee_1.png" style="height: 100%;" data-aos="arrow-animation">
+      </div>
+ 
+  <p class="sectionHeader" data-aos="fade-up">WORK</p>
+
+  
+
+  <div class="workImg">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+ 
+   
+     
+    
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html?name=LiveTheAndLife';" src="images/WorkAsset0.png" class="img-responsive"></div> 
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+    <p class="workTitile" onclick="location.href = 'workInner.html?name=LiveTheAndLife';">#LiveTheAndLife</p>
+    <p class="workType">ICICI Direct</p>
+    <p class="workDescription">Our ‘Live the AND Life’ campaign for ICICI Direct marks a strategic shift for the brand, presenting it as a trusted partner for individuals seeking a holistic approach to their financial journey, and promoting a lifestyle that aligns with diverse ambitions.</p>
+    </div>
+   </div>
+   <div style="clear: both;"></div>
+ </div>
+ 
+ <div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+ 
+  
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+ <p class="workTitile" onclick="location.href = 'workInner.html?name=KuchKhaasKamao';">#KuchKhaasKamao</p>
+ <p class="workType">Flipkart Seller Hub</p>
+ <p class="workDescription">Running a business isn’t just about earning money. There is always a greater emotional purpose such as fulfilling a long-cherished dream, earning the respect of customers, making a genuine difference in their lives and a feeling of pride in thoughtfully fulfilling people’s orders. When business owners set up shop on Flipkart Seller Hub, they earn personal, intangible things apart from money and we call that, ‘Kuch Khaas Kamao’.</p>
+ </div>
+ 
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html?name=KuchKhaasKamao';" src="images/Screenshot and Thumbnail for FK.png" class="img-responsive"></div> 
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+ 
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html?name=TreatmentZarooriHai';" src="images/Treatment Zaroori Hai.png" class="img-responsive"></div>
+ 
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+  <p class="workTitile" onclick="location.href = 'workInner.html?name=TreatmentZarooriHai';">#TreatmentZarooriHai</p>
+  <p class="workType">Meril</p>
+  <p class="workDescription">People tend to think surgery at a higher age is not possible and therefore, they don’t go and inquire about the process. Our campaign wanted to break this myth and educate them that easier, safer, modern advancements, and smoother recoveries are available today.</p>
+  </div>
+ </div>
+ <div style="clear: both;"></div>
+</div>
+    
+      <div class="workImg">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+      <p class="workTitile" onclick="location.href = 'workInner.html?name=ChaloSaathKhelein';">#ChaloSaathKhelein</p>
+      <p class="workType">A23</p>
+      <p class="workDescription">A23 games wanted to rebrand itself as a premium gaming platform where gamers from all aspects of life can come and enjoy gaming to their hearts content
+        We roped in the KingKhan as the brand ambassador to communicate about the different ‘master’ gamers who come to play on A23 and celebrate them. All through the lens of SRK and what he is best known for.</p>
+      </div>
+    
+   
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html?name=ChaloSaathKhelein';" src="images/workAsset1.png" class="img-responsive"></div> 
+  
+  </div>
+  <div style="clear: both;"></div>
+</div>
+<div class="workImg">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/workAsset2.png" class="img-responsive" onclick="location.href = 'workInner.html?name=PlayResponsibly';"></div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding" data-aos="fade-up">
+    <p class="workTitile" onclick="location.href = 'workInner.html?name=PlayResponsibly';">#PlayResponsibly</p>
+  <p class="workType">A23</p>
+  <p class="workDescription">Where gaming platforms promise mega prizes and winning big, Vector and A23 urged gamers to play responsibly. In a first-of-its kind communication from any gaming platform we got King Khan explains the mandatory disclaimer in a layman’s words and continues to explain why gaming during family get-togethers is anti-social. And why it is important to put their phone aside while on the dining table, a phenomena we get to see in every household.</p>
+
+  </div> 
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+      <p class="workTitile" onclick="location.href = 'workInner.html?name=GujratTitans';">#AavaDe</p>
+      <p class="workType">Gujarat Titans</p>
+      <p class="workDescription">What a privilege and joy to have gotten the chance to make a teeny weeny contribution 
+       at the very beginning of a brand/team's journey. Amongst it all - the team name, the team logo and the team chant!</p>
+      </div> 
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/workAsset3.png" class="img-responsive" onclick="location.href = 'workInner.html?name=GujratTitans';"></div>
+ 
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;">
+  <img onclick="location.href = 'workInner.html?name=TVS';" src="images/tvs thumbnail.png" class="img-responsive"></div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding" data-aos="fade-up">
+    <p class="workTitile" onclick="location.href = 'workInner.html?name=TVS';">#WhistleThroughEveryTurn</p>
+  <p class="workType">TVS Eurogrip Tyres</p>
+  <p class="workDescription">The films feature M S Dhoni as the main protagonist, narrating his gripping biking adventures to his teammates. The stories are woven with suspense and light-hearted humor, crafted to connect with the millennials. The films are a beautiful concoction of interesting biking stories on one side while showcasing the high performance and quality of TVS Eurogrip Tyres on the other.</p>
+  
+  </div>
+</div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+ 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+      <p class="workTitile" onclick="location.href = 'workInner.html?name=A23WinningMove';">#A23WinningMove</p>
+      <p class="workType">A23</p>
+      <p class="workDescription">A23 has always taken pride in being a people’s brand throughout. As an agency we have always kept our messaging very straightforward, and just like our first three ads during the IPL, to encourage gaming while respecting surroundings, the current set of TVCs calls out to cricket fans and online gaming users to enjoy the best moments of the game. The campaign hashtag, #A23WinningMove, urges people to celebrate cricketing moments with us through these dance routines, as well as come up with their own this IPL season.</p>
+      </div>   
+  
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/workAsset5.png" class="img-responsive" onclick="location.href = 'workInner.html?name=A23WinningMove';"></div>
+ 
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<!-- <div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding" data-aos="fade-up">
+   <p class="workTitile" onclick="location.href = 'workInner.html?name=WinnersKaHomeGround';">#WinnersKaHomeGround</p>
+ <p class="workType">A23</p>
+ <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+
+ </div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;">
+    <img onclick="location.href = 'workInner.html?name=WinnersKaHomeGround';" src="images/a23winning.png" class="img-responsive">
+  </div>  
+ </div>
+ <div style="clear: both;"></div>
+</div> -->
+  <div class="btnSec" data-aos="zoom-in">
+    <button type="submit" class="workBtn" id="loadMoreWork">Load More Work</button>
+  </div>
+
+  <div style="padding-top: 60px;" >
+    <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+  </div>
+
+
+  <p class="sectionHeader" data-aos="fade-up">SERVICES</p>
+  <div class="panel-group" id="services">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+
+<div data-aos="fade-up">
+     <div data-toggle="collapse" data-parent="#services" data-target="#service1" class="servicesText servicesTextYellow" style="float: left;">EXPERIENCE</div>
+          <div class="arrowSignService">
+            <img src="images/arrowservice.png">
+          </div>
+        
+          <div style="float:left;" data-toggle="collapse" data-parent="#services" data-target="#service2" class="servicesText"
+         >MARTECH</div>
+
+          <div style="clear: both;"></div>
+
+
+          <div data-toggle="collapse" data-parent="#services" data-target="#service3" class="servicesText" style="float: left;">PERFORMANCE</div>
+          <div class="arrowSignService">
+            <img src="images/arrowservice.png">
+          </div>
+          <div style="float:left;" data-toggle="collapse" data-parent="#services" data-target="#service4" class="servicesText">ANALYTICS</div>
+
+            <div style="clear: both;"></div>
+
+          </div>
+        </h4>
+      </div>
+
+      <div id="service1" class="serviceCollapse panel-collapse collapse in">
+        <div class="panel-body">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+              <img src="images/experience1.png" class="serviceImg">
+            <p class="serviceNewText">
+                          Brand Communication & Engagement Strategy
+                              </p>  
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/experience2.png" class="serviceImg">
+            <p class="serviceNewText">
+              Social Media Marketing & Commerce
+                              </p>  
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/experience3.png" class="serviceImg">
+            <p class="serviceNewText">
+              UI/UX Design & Recommendations
+                              </p>  
+            </div>
+
+         
+        </div>
+        <div style="clear: both;"></div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+            <img src="images/experience4.png" class="serviceImg">
+          <p class="serviceNewText">
+            Content Creation
+                            </p>  
+          </div>
+          
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+            <img src="images/experience5.png" class="serviceImg">
+          <p class="serviceNewText">
+            ORM
+                            </p>  
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+            <img src="images/experience6.png" class="serviceImg">
+          <p class="serviceNewText">
+            CRM & Loyalty
+                            </p>  
+          </div>
+
+             
+            </div>
+         
+     
+
+
+        
+
+       </div>
+      </div>
+
+      <div id="service2" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+              <img src="images/martech1.png" class="serviceImg">
+            <p class="serviceNewText">
+              E-Commerce Marketplace Solutions
+                              </p>  
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/martech2.png" class="serviceImg">
+            <p class="serviceNewText">
+              Asset Development
+                              </p>  
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/martech3.png" class="serviceImg">
+            <p class="serviceNewText">
+              Marketing Automation
+                              </p>  
+            </div>
+
+         
+        </div>
+        <div style="clear: both;"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+            
+        
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+            <img src="images/martech4.png" class="serviceImg">
+          <p class="serviceNewText">
+            Live Commerce
+                            </p>  
+        
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+            
+        
+          </div>
+
+        </div>
+        <div style="clear: both;"></div>
+         
+</div>
+       
+      </div>
+
+      <div id="service3" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+              <img src="images/performance1.png" class="serviceImg">
+            <p class="serviceNewText">
+              Search Engine Optimization
+                              </p>  
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/performance2.png" class="serviceImg">
+            <p class="serviceNewText">
+              Search Engine Marketing
+                              </p>  
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/performance3.png" class="serviceImg">
+            <p class="serviceNewText">
+              Paid Media Strategy
+                              </p>  
+            </div>
+
+         
+        </div>
+        <div style="clear: both;"></div>
+
+        </div>
+      </div>
+
+      <div id="service4" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+              <img src="images/analytics1.png" class="serviceImg">
+            <p class="serviceNewText">
+              Funnel Analysis
+                              </p>  
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/analytics2.png" class="serviceImg">
+            <p class="serviceNewText">
+              Trend Analysis
+                              </p>  
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+              <img src="images/analytics3.png" class="serviceImg">
+            <p class="serviceNewText">
+              Digital Command Center & MIS
+                              </p>  
+            </div>
+
+         
+        </div>
+        <div style="clear: both;"></div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding" >
+            <img src="images/analytics4.png" class="serviceImg">
+          <p class="serviceNewText">
+            Qualitative & Quantitative Audit
+                            </p>  
+          </div>
+          
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+            <img src="images/analytics5.png" class="serviceImg">
+          <p class="serviceNewText">
+            Channel Analysis
+                            </p>  
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 noPadding text-center" >
+            <img src="images/analytics6.png" class="serviceImg">
+          <p class="serviceNewText">
+            ROAS & ROMI
+                            </p>  
+          </div>
+
+       
+      </div>
+      <div style="clear: both;"></div>
+   
+        
+        </div>
+      </div>
+
+    
+
+     
+
+    
+         
+         
+
+    
+
+    </div>
+   
+   
+  </div> 
+ 
+
+  <div style="padding-top: 60px;" >
+    <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+  </div>
+
+
+  <!-- <p class="sectionHeader" data-aos="fade-up">BLOG</p>
+  <div class="blogImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"></div> 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPaddingBlog" data-aos="fade-up">
+   <p class="workTitile" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+   <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+   </div> 
+   </div>
+<div style="clear: both;"></div>
+</div>
+
+<div class="blogImg">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPaddingBlog" data-aos="fade-up">
+   <p class="workTitile text-right" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+ <p class="workDescription text-right">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+
+ </div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"  style="cursor: pointer;"></div>  
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="blogImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"></div> 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPaddingBlog" data-aos="fade-up">
+   <p class="workTitile" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+   <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+   </div> 
+   </div>
+<div style="clear: both;"></div>
+</div>
+<div class="blogImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPaddingBlog" data-aos="fade-up">
+     <p class="workTitile text-right" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+   <p class="workDescription text-right">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+  
+   </div> 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"  style="cursor: pointer;"></div>  
+   </div>
+   <div style="clear: both;"></div>
+  </div>
+  
+  <div class="blogImg">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  
+    
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"></div> 
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPaddingBlog" data-aos="fade-up">
+     <p class="workTitile" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+     <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+     </div> 
+     </div>
+  <div style="clear: both;"></div>
+  </div>
+<div class="btnSec" data-aos="zoom-in" id="btnBlog">
+  <button type="submit" class="workBtn" id="loadMoreBlog">Load More</button>
+</div>
+<div style="padding-top: 60px;" >
+  <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+</div> -->
+
+<div id="footerSection">
+</div>
+
+</div>
+    </div>
+  </div>
+
+
+  <div id="mobbView">
+    <nav class="navbar navbar-inverse sticky" id="navbarr">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="vectorLogoW" href="index.html"><img class="vectorLogo img-responsive" src="images/Vector Logo white.svg" alt="Vector logo" /></a>  
+        </div>
+       
+        <ul class="nav navbar-nav navbar-right">
+          <li class="opt"><a href="#" class="secondItem" onclick="openMenuMob()"><img src="images/Options Icon.svg"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div id="menuOverlayMob" class="overlay">
+      <div class="opacityOverlay">
+        <a class="overlayLogo" href="index.html"><img src="images/vectorlogo black.svg" alt="Vector logo" /></a> 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenuMob()">&times;</a>
+        <div class="overlay-content optionsoverr">
+          <div class="menuTextOptions">
+           <a href="aboutus.html">About Us</a>
+           <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a><br>
+           <a  href="values.html">DNA & VALUES</a>
+           <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a><br>
+           <a href="work.html">WORK</a>
+           <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a><br>
+           <a href="services.html">SERVICES</a>
+           <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a><br>
+           <a href="client.html">CLIENTS</a>
+           <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a><br>
+           <a href="reachUs.html">REACH US</a>
+           <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a><br>
+           <!-- <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+           <a href="blog.html">BLOG</a> -->
+          </div>
+        </div>
+          <div class="overlayFooter">
+            <p class="textBold">New Business Enquiries</p>
+	    <p class="textLight"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=>new.client@vectorbrands.in" target="_blank">new.client@vectorbrands.in</a> </p>
+           
+            <p class="textBold">Careers Enquiries</p>
+            <p class="textLight"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=>careers@vectorbrands.in" target="_blank">careers@vectorbrands.in</a></p>
+
+            <p class="textBold">Vector Brand Solutions Pvt. Ltd.</p>
+            <p class="textLight"><a>  #501, Peninsula Towers, Peninsula Corporate Park,<br>Lower Parel, Mumbai 400 013.</a></p>
+
+            <p class="phoneFont">
+              <span class="relPosition" style="font-weight: 700;">
+               <img src="images/Path 45.svg" style="vertical-align: baseline;">&nbsp;+91 22 4672 3450
+              </span>
+              </p>
+              <p class="socialIMgg">
+                <a target='_blank' href='https://www.facebook.com/VectorBrandSolutions'>
+                  <img src="images/Group 50.svg" class="socialIcons">
+                </a> 
+                <a target='_blank' href='https://www.instagram.com/vectorbrandsolutions/'>
+                  <img src="images/Group 70.svg" class="socialIcons">
+                </a> 
+                <a target='_blank' href='https://www.linkedin.com/company/80656468'>
+                  <img src="images/Group 57.svg" class="socialIcons">
+                </a> 
+              </p>
+              <p>© Copyright Vector Brand Solutions. We do not claim ownership of Client logos, brands, or trademarks featured on this site. All rights to these logos, brands, and trademarks are reserved by their respective legal entities.</p>
+          </div>
+
+        
+         
+       
+       
+      </div>
+      
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+       <ol class="carousel-indicators">
+        <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li> -->
+        <!-- <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li> -->
+      </ol> 
+    
+     
+      <div class="carousel-inner">
+
+        
+
+        <div class="item videoItem active">
+          <div>
+           <video muted  playsinline autoplay loop style="height: 100vh;">
+             <source src="videos/workinner/3 - ICICI 50 SEC HD 170124.mp4"/>
+           </video>
+          </div> 
+         
+          <div class="carousel-caption">
+          
+            
+            <p class="secondTextCarouselPlayR">LIVE THE AND LIFE
+             <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=LiveTheAndLife';">
+            </p>
+           <img src="images/Path 26 (2).svg" class="downArrow">
+       
+      
+        </div>
+           
+         </div>
+
+         <div class="item videoItem">
+          <div>
+           <video muted  playsinline autoplay loop style="height: 100vh;">
+             <source src="videos/workinner/FK_IDLI_20SEC_WITH_SUB.mp4"/>
+           </video>
+          </div> 
+         
+          <div class="carousel-caption">
+            
+            <p class="secondTextCarouselPlayR">Kuch Khaas Kamao
+             <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=KuchKhaasKamao';">
+            </p>
+           <img src="images/Path 26 (2).svg" class="downArrow">
+       
+      
+        </div>
+           
+         </div>
+
+         <div class="item videoItem">
+          <div>
+           <video muted  playsinline autoplay loop style="height: 100vh;">
+             <source src="videos/workinner/Absorbable Stent.mp4"/>
+           </video>
+          </div> 
+         
+          <div class="carousel-caption">
+          
+            <p class="secondTextCarouselPlayR">TREATMENT ZAROORI HAI
+             <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=TreatmentZarooriHai';">
+            </p>
+           <img src="images/Path 26 (2).svg" class="downArrow">
+       
+      
+        </div>
+           
+         </div>
+
+         <div class="item videoItem">
+          <div>
+           <video muted  playsinline autoplay loop style="height: 100vh;">
+             <source src="videos/for Vector Website - SRK(LOOP X 3) 9X16.mp4"/>
+           </video>
+          </div> 
+         
+          <div class="carousel-caption">
+          
+            <p class="firstTextCarouselPlayR">A23 Games</p>
+            <p class="secondTextCarouselPlayR">PLAY RESPONSIBLY&nbsp;
+             <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=PlayResponsibly';">
+            </p>
+           <img src="images/Path 26 (2).svg" class="downArrow">
+       
+      
+        </div>
+           
+         </div>
+
+         <div class="item videoItem">
+          <div>
+            <video muted  playsinline autoplay loop style="height: 100vh;">
+             <source src="videos/for Vector Website - MSD(LOOP X 3) 9X16.mp4"/>
+           </video>
+          </div> 
+         
+          <div class="carousel-caption" >
+          
+            <p class="firstTextCarouselBigTVS">TVS Tyres</p>
+            <p class="secondTextCarouselBig">WHISTLE THROUGH EVERY TURN&nbsp;
+              <span class="relativeSpan"><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=TVS';"></span>
+            </p>
+           <img src="images/Path 26 (2).svg" class="downArrowBigTVS">
+       
+      
+        </div>
+           
+         </div>
+
+         <div class="item videoItem">
+          <div>
+           <video autoplay muted style="height: 100vh;">
+             <source src="videos/for Vector Website - SRK(LOOP X 3) 9X16.mp4"/>
+           </video>
+          </div> 
+         
+          <div class="carousel-caption">
+          
+            <p class="firstTextCarousel">Gujarat Titans</p>
+            <p class="secondTextCarousel">AAVA DE&nbsp;
+             <img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=GujratTitans';">
+            </p>
+           <img src="images/Path 26 (2).svg" class="downArrow">
+       
+      
+        </div>
+           
+         </div>
+
+        <!-- <div class="item videoItem">
+          <video loop="loop" muted="muted" autoplay="autoplay">
+            <source src="videos/Responsible Gaming .mp4">
+            </video>
+            <div class="carousel-caption">
+              <p class="firstTextCarouselPlayR">A23 Games</p>
+              <p class="secondTextCarouselPlayR">PLAY RESPONSIBLY&nbsp;
+                <span class=""><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=PlayResponsibly';"></span>
+                </p>
+             <img src="images/Path 26 (2).svg" class="downArrowBigPlayR">
+            </div>
+        </div> -->
+    
+        <!-- <div class="item videoItem">
+          <video loop="loop" muted="muted" autoplay="autoplay">
+            <source src="videos/TVSX2.mp4"/>
+          </video>
+          <div class="carousel-caption">
+            <p class="firstTextCarouselBig">A23 Games</p>
+            <p class="secondTextCarouselBig">CHALO SAATH KHELEIN&nbsp;
+              <span class="relativeSpan"><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=ChaloSaathKhelein';"></span>
+              </p>
+           <img src="images/Path 26 (2).svg" class="downArrowBig">
+          </div>
+        </div> -->
+    
+        <!-- <div class="item videoItem">
+          <video loop="loop" muted="muted" autoplay="autoplay">
+            <source src="videos/TVSX2.mp4"/>
+          </video>
+        
+          <div class="carousel-caption" >
+          
+              <p class="firstTextCarouselBigTVS">TVS Tyres</p>
+              <p class="secondTextCarouselBig">COUNTRY FULL OF TURNS&nbsp;
+                <span class="relativeSpan"><img src="images/playicon.png" class="playHover" onclick="location.href = 'workInner.html?name=TVS';"></span>
+              </p>
+             <img src="images/Path 26 (2).svg" class="downArrowBigTVS">
+         
+        
+          </div>
+        </div> -->
+
+    
+      </div>
+    
+     
+    </div>
+    <div style="clear: both;"></div>
+    <div class="yellowStrip" id="yellowMob">
+      <p><span>Pace</span> <img src="images/yellowStripArrow.svg"> <span>Preference</span> <img src="images/yellowStripArrow.svg"> <span> Purpose</span> <img src="images/yellowStripArrow.svg"> <span>Performance</span></p>
+    </div>
+
+    <div style="background-color:#ffffff ;position: absolute;width: 100%;">
+   
+      <div class="container">
+        <p class="sectionHeaderFirst" style="line-height: 1;padding-top: 38px;" data-aos="fade-up">
+          WE ARE A BRAND-FIRST FULL FUNNEL CREATIVE AGENCY FOR PRIMARILY ONLINE, EARLY-STAGE BUSINESSES.
+        </p>
+
+        <p class="newAngle"  data-aos="fade-up" data-aos-delay="100">We partner with brands and businesses, who want to sell more & sell better in an online marketplace.</p>
+
+         <div style="padding-top: 25px;" >
+            <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+          </div>
+
+
+          <p class="sectionHeader"  data-aos="fade-up" data-aos-delay="500">OUR BELIEF</p>
+          <div class="panel-group" id="accordion" style="padding-top: 6px;">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+    
+                 <div data-aos="fade-up" data-aos-delay="600">
+                  <div class="accordionText accordionTextmob"  style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#paceM">PACE</div>
+                  <div class="arrowSign">
+                    <img src="images/smallArrow.svg">
+                  </div>
+    
+                  <div class="accordionText accordionTextmob" style="float: left;"  data-toggle="collapse" data-parent="#accordion" data-target="#performance">PERFORMANCE</div>
+                  <div style="clear: both;"></div>
+    
+        
+                 
+                  <div class="accordionText accordionTextmob" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#preference">PREFERENCE</div>
+                  <div class="arrowSign">
+                    <img src="images/smallArrow.svg">
+                  </div>
+                  <div class="accordionText accordionTextmob" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#purpose" >PURPOSE</div>
+                  <div style="clear: both;"></div>
+                </div>
+                </h4>
+              </div>
+       
+              <div  data-aos="fade-up" data-aos-delay="600">
+              <div id="pace" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <span class="mobDarkText">Pace:</span><br>
+                  <span class="mobInnerPanel">
+                  For today’s finger scrolling, #TagTrending, in the moment consumer, we understand that speed and agility is 
+                  key to maximizing and leveraging brand & business impact opportunities.
+                </span> </div>
+              </div>
+    
+              <div id="performance" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <span class="mobDarkText">Performance:</span><br>
+                 <span class="mobInnerPanel">
+                  Brand initiatives are directly measured
+                
+                  by ROMI and you cannot improve what
+                  
+                  you do not measure. We deliver
+                  
+                  strategic goal based solutions in a
+                  
+                  scientific, transparent and measurable
+                  
+                  manner.
+                 </span> </div>
+              </div>
+    
+              <div id="preference" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <span class="mobDarkText">Preference:</span><br>
+                  <span class="mobInnerPanel">
+                  In a world of near infinite choices and
+               
+                  dwindling differentiation, we believe
+                  
+                  that creatively distinct brand narratives
+                  
+                  and interventions build & sustain
+                  
+                  positive consumer mental availability.
+                </span>
+                </div>
+              </div>
+    
+              <div id="purpose" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <span class="mobDarkText">Purpose:</span><br>
+                  <span class="mobInnerPanel">
+                  Brand purpose is key for today’s
+    
+                  consumers’ who are relentlessly seeking
+                  
+                  meaning through their purchases. We
+                  
+                  ensure that the brand credo is reflected
+                  
+                  undiluted through the funnel. 
+                </span></div>
+              </div>
+            </div>
+            </div>
+           
+           
+          </div> 
+    
+      
+          <div style="padding-top: 25px;">
+            <img src="images/yellowLinee_1.png" style="height: 100%;" data-aos="arrow-animation">
+          </div>
+
+
+          <p class="sectionHeader"  data-aos="fade-up">WORK</p>
+          <div class="owl-carousel owl-theme" data-aos="fade-up">
+            
+            <div class="owlSection">
+                   
+              <img onclick="location.href = 'workInner.html?name=LiveTheAndLife';" src="images/WorkAsset0.png" class="img-responsive">
+           
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=LiveTheAndLife';">#LiveTheAndLife</p>
+                <p class="workType">ICICI Direct</p>
+                <p class="workDescription">Our ‘Live the AND Life’ campaign for ICICI Direct marks a strategic shift for the brand, presenting it as a trusted partner for individuals seeking a holistic approach to their financial journey, and promoting a lifestyle that aligns with diverse ambitions.</p>
+                </div>
+           
+            </div>
+
+            <div class="owlSection">
+                   
+              <img onclick="location.href = 'workInner.html?name=KuchKhaasKamao';" src="images/Screenshot and Thumbnail for FK.png" class="img-responsive">
+           
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=KuchKhaasKamao';">#KuchKhaasKamao</p>
+                <p class="workType">Flipkart Seller Hub</p>
+                <p class="workDescription">Running a business isn’t just about earning money. There is always a greater emotional purpose such as fulfilling a long-cherished dream, earning the respect of customers, making a genuine difference in their lives and a feeling of pride in thoughtfully fulfilling people’s orders. When business owners set up shop on Flipkart Seller Hub, they earn personal, intangible things apart from money and we call that, ‘Kuch Khaas Kamao’.</p>
+                </div>
+           
+            </div>
+
+            <div class="owlSection">
+                   
+              <img onclick="location.href = 'workInner.html?name=TreatmentZarooriHai';" src="images/Treatment Zaroori Hai.png" class="img-responsive">
+           
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=TreatmentZarooriHai';">#TreatmentZarooriHai</p>
+                <p class="workType">Meril</p>
+                <p class="workDescription">People tend to think surgery at a higher age is not possible and therefore, they don’t go and inquire about the process. Our campaign wanted to break this myth and educate them that easier, safer, modern advancements, and smoother recoveries are available today.</p>
+                </div>
+           
+            </div>
+            <div class="owlSection">
+                   
+              <img onclick="location.href = 'workInner.html?name=ChaloSaathKhelein';" src="images/workAsset1.png" class="img-responsive">
+           
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=ChaloSaathKhelein';">#ChaloSaathKhelein</p>
+                <p class="workType">A23</p>
+                <p class="workDescription">A23 games wanted to rebrand itself as a premium gaming platform where gamers from all aspects of life can come and enjoy gaming to their hearts content
+                  We roped in the KingKhan as the brand ambassador to communicate about the different ‘master’ gamers who come to play on A23 and celebrate them. All through the lens of SRK and what he is best known for.</p>
+                </div>
+           
+            </div>
+            <div class="owlSection">
+              <img src="images/workAsset2.png" class="img-responsive" onclick="location.href = 'workInner.html?name=PlayResponsibly';">           
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=PlayResponsibly';">#PlayResponsibly</p>
+                <p class="workType">A23</p>
+                <p class="workDescription">Where gaming platforms promise mega prizes and winning big, Vector and A23 urged gamers to play responsibly. In a first-of-its kind communication from any gaming platform we got King Khan explains the mandatory disclaimer in a layman’s words and continues to explain why gaming during family get-togethers is anti-social. And why it is important to put their phone aside while on the dining table, a phenomena we get to see in every household.</p>
+                </div>
+            </div>
+            <div class="owlSection">
+             <img src="images/workAsset3.png" class="img-responsive" onclick="location.href = 'workInner.html?name=GujratTitans';">
+              <div>
+             <p class="workTitile" onclick="location.href = 'workInner.html?name=GujratTitans';">#AavaDe</p>
+             <p class="workType">Gujarat Titans</p>
+             <p class="workDescription">What a privilege and joy to have gotten the chance to make a teeny weeny contribution 
+              at the very beginning of a brand/team's journey. Amongst it all - the team name, the team logo and the team chant!</p>
+             </div> 
+            </div>
+
+            <div class="owlSection">
+              <img onclick="location.href = 'workInner.html?name=TVS';" src="images/tvs thumbnail.png" class="img-responsive">
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=TVS';">#WhistleThroughEveryTurn</p>
+              <p class="workType">TVS Eurogrip Tyres</p>
+              <p class="workDescription">The films feature M S Dhoni as the main protagonist, narrating his gripping biking adventures to his teammates. The stories are woven with suspense and light-hearted humor, crafted to connect with the millennials. The films are a beautiful concoction of interesting biking stories on one side while showcasing the high performance and quality of TVS Eurogrip Tyres on the other.</p>
+              </div> 
+            </div>
+            <div class="owlSection">
+            <img src="images/workAsset5.png" class="img-responsive" onclick="location.href = 'workInner.html?name=A23WinningMove';">
+              <div>
+             <p class="workTitile" onclick="location.href = 'workInner.html?name=A23WinningMove';">#A23WinningMove</p>
+             <p class="workType">A23</p>
+             <p class="workDescription">A23 has always taken pride in being a people’s brand throughout. As an agency we have always kept our messaging very straightforward, and just like our first three ads during the IPL, to encourage gaming while respecting surroundings, the current set of TVCs calls out to cricket fans and online gaming users to enjoy the best moments of the game. The campaign hashtag, #A23WinningMove, urges people to celebrate cricketing moments with us through these dance routines, as well as come up with their own this IPL season.</p>
+             </div>  
+            </div>
+
+            <!-- <div class="owlSection">
+              <img onclick="location.href = 'workInner.html?name=WinnersKaHomeGround';" src="images/a23winning.png" class="img-responsive">
+
+              <div>
+                <p class="workTitile" onclick="location.href = 'workInner.html?name=WinnersKaHomeGround';">#WinnersKaHomeGround</p>
+              <p class="workType">A23</p>
+              <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+             
+              </div> 
+             
+            </div> -->
+
+           
+        </div>
+          <div style="padding-top: 25px;">
+            <img src="images/yellowLinee_1.png" style="height: 100%;" data-aos="arrow-animation">
+          </div>
+
+
+          <p class="sectionHeader" data-aos="fade-up">SERVICES</p>
+
+          <div class="panel-group" id="servicesMob"  style="padding-top: 6px;" data-aos="fade-up" data-aos-delay="100">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+        
+        <div>
+             <div data-toggle="collapse" data-parent="#servicesMob" data-target="#service11" class="servicesText serviceTextMob" style="float: left;">EXPERIENCE</div>
+                  <div class="arrowSignService">
+                    <img src="images/arrowservice.png">
+                  </div>
+                
+                  <div style="float:left;" data-toggle="collapse" data-parent="#servicesMob" data-target="#service22" class="servicesText serviceTextMob"
+                 >MARTECH</div>
+        
+                  <div style="clear: both;"></div>
+        
+        
+                  <div data-toggle="collapse" data-parent="#servicesMob" data-target="#service33" class="servicesText serviceTextMob" style="float: left;">PERFORMANCE</div>
+                  <div class="arrowSignService">
+                    <img src="images/arrowservice.png">
+                  </div>
+                  <div style="float:left;" data-toggle="collapse" data-parent="#servicesMob" data-target="#service44" class="servicesText serviceTextMob">ANALYTICS</div>
+        
+                    <div style="clear: both;"></div>
+        
+                  </div>
+                </h4>
+              </div>
+        
+              <div id="service11" class="serviceCollapse panel-collapse collapse in">
+                <div class="panel-body" style="margin-bottom: 40px;min-height: 450px;">
+                  <div class="col-xs-12 noPadding text-center marginService">
+                    <div class="col-xs-6 noPadding" >
+                      <img src="images/experience1.png" class="serviceImg">
+                    <p class="serviceNewText">
+                                  Brand Communication &<br>Engagement Strategy
+                                      </p>  
+                    </div>
+                    
+                    
+                    <div class="col-xs-6 noPadding text-center" >
+                      <img src="images/experience2.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      Social Media Marketing &<br>Commerce
+                                      </p>  
+                    </div>
+                    
+                           
+                 
+                </div>
+                <div style="clear: both;"></div>
+        
+                <div class="col-xs-12 noPadding text-center marginService">
+                  <div class="col-xs-6 noPadding text-center" >
+                    <img src="images/experience3.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    UI/UX Design &<br>Recommendations
+                                    </p>  
+                  </div>
+                  <div class="col-xs-6 noPadding" >
+                    <img src="images/experience4.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    Content Creation
+                                    </p>  
+                  </div>
+                  
+                  
+        
+                     
+                    </div>
+                 
+                    <div style="clear: both;"></div>
+        
+                    
+                        <div class="col-xs-12 noPadding text-center marginService">
+                                                 
+                          
+                          <div class="col-xs-6 noPadding text-center" >
+                            <img src="images/experience5.png" class="serviceImg">
+                          <p class="serviceNewText">
+                            ORM
+                                            </p>  
+                          </div>
+                          
+                          <div class="col-xs-6 noPadding text-center" >
+                            <img src="images/experience6.png" class="serviceImg">
+                          <p class="serviceNewText">
+                            CRM & Loyalty
+                                            </p>  
+                          </div>
+                
+                             
+                            </div>
+        
+               </div>
+              </div>
+        
+              <div id="service22" class="serviceCollapse panel-collapse collapse">
+                <div class="panel-body" style="margin-bottom: 40px;min-height: 450px;">
+                  
+                  <div class="col-xs-12 noPadding text-center marginService">
+                    <div class="col-xs-6 noPadding" >
+                      <img src="images/martech1.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      E-Commerce<br>Marketplace Solutions
+                                      </p>  
+                    </div>
+                    
+                    
+                    <div class="col-xs-6 noPadding text-center" >
+                      <img src="images/martech2.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      Asset Development
+                                      </p>  
+                    </div>
+                    
+                    
+        
+                 
+                </div>
+                <div style="clear: both;"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding text-center marginService">
+                  <div class="col-xs-6 noPadding text-center" >
+                    <img src="images/martech3.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    Marketing Automation
+                                    </p>  
+                  </div>
+        
+                  <div class="col-xs-6 noPadding" >
+                    <img src="images/martech4.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    Live Commerce
+                                    </p>  
+                
+                  </div>
+        
+        
+                </div>
+                <div style="clear: both;"></div>
+                 
+        </div>
+               
+              </div>
+        
+              <div id="service33" class="serviceCollapse panel-collapse collapse">
+                <div class="panel-body" style="margin-bottom: 40px;min-height: 450px;">
+                  
+                  <div class="col-xs-12 noPadding text-center marginService">
+                    <div class="col-xs-6 noPadding" >
+                      <img src="images/performance1.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      Search Engine<br>Optimization
+                                      </p>  
+                    </div>
+                    
+                    
+                    <div class="col-xs-6 noPadding text-center" >
+                      <img src="images/performance2.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      Search Engine<br>Marketing
+                                      </p>  
+                    </div>
+                    
+                   
+        
+                 
+                </div>
+                <div style="clear: both;"></div>
+        
+                <div class="col-xs-12 noPadding text-center marginService">
+                 
+                  
+                  <div class="col-xs-6 noPadding text-center" >
+                    <img src="images/performance3.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    Paid Media<br>Strategy
+                                    </p>  
+                  </div>
+      
+               
+              </div>
+
+                </div>
+              </div>
+        
+              <div id="service44" class="serviceCollapse panel-collapse collapse">
+                <div class="panel-body" style="margin-bottom: 40px;min-height: 450px;">
+                  
+                  <div class="col-xs-12 noPadding text-center marginService">
+                    <div class="col-xs-6 noPadding" >
+                      <img src="images/analytics1.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      Funnel Analysis
+                                      </p>  
+                    </div>
+                    
+                    
+                    <div class="col-xs-6 noPadding text-center" >
+                      <img src="images/analytics2.png" class="serviceImg">
+                    <p class="serviceNewText">
+                      Trend Analysis
+                                      </p>  
+                    </div>      
+                 
+                </div>
+                <div style="clear: both;"></div>
+        
+                <div class="col-xs-12 noPadding text-center marginService">
+                  <div class="col-xs-6 noPadding text-center" >
+                    <img src="images/analytics3.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    Digital Command<br>Center & MIS
+                                    </p>  
+                  </div>
+                  <div class="col-xs-6 noPadding" >
+                    <img src="images/analytics4.png" class="serviceImg">
+                  <p class="serviceNewText">
+                    Qualitative &<br>Quantitative Audit
+                                    </p>  
+                  </div>      
+               
+              </div>
+              <div style="clear: both;"></div>
+           
+              <div class="col-xs-12 noPadding text-center marginService">
+                <div class="col-xs-6 noPadding text-center" >
+                  <img src="images/analytics5.png" class="serviceImg">
+                <p class="serviceNewText">
+                  Channel Analysis
+                                  </p>  
+                </div>
+                
+                <div class="col-xs-6 noPadding text-center" >
+                  <img src="images/analytics6.png" class="serviceImg">
+                <p class="serviceNewText">
+                  ROAS & ROMI
+                                  </p>  
+                </div>
+      
+             
+            </div>
+                </div>
+              </div>
+        
+            
+        
+             
+        
+            
+                 
+                 
+        
+            
+        
+            </div>
+           
+           
+          </div> 
+
+
+
+
+         
+
+
+  </div>
+
+  <!-- <div class="yellowStripp">
+    <p><span>Pace</span> <img src="images/yellowStripArrow.svg"> <span>Preference</span> <img src="images/yellowStripArrow.svg"> <span> Purpose</span> <img src="images/yellowStripArrow.svg"> <span>Performance</span></p>
+  </div> -->
+  </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+</script>
+<script src="owlcarouseljs/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+var myInterval;
+$(document).ready(function () {
+  var windoww = $(window).width();
+  if(windoww <= 767){
+
+ 
+$('.accordionTextmob').eq(0).addClass('accordionTextYellowMob');
+$("#pace .panel-body ").addClass("bolder")
+
+ myInterval = setInterval(myTimer, 6000);
+var counter = 1;
+// s
+function myTimer() {
+  var c = counter % $('.accordionTextmob').length;
+  console.log(c)
+  $('.accordionTextmob').removeClass('accordionTextYellowMob');
+  $('.accordionTextmob').eq(c).addClass('accordionTextYellowMob');
+  var textName = $('.accordionTextmob').eq(c).addClass('accordionTextYellowMob').text()
+  console.log(textName)
+  counter++;
+  if (textName == "PACE"){
+$("#pace .panel-body ").addClass("bolder")
+$("#performance .panel-body,#preference .panel-body,#purpose .panel-body").removeClass("bolder")
+ }
+
+ else if (textName == "PERFORMANCE"){
+$("#performance .panel-body").addClass("bolder")
+$("#pace .panel-body,#preference .panel-body,#purpose .panel-body").removeClass("bolder")
+ }
+
+ else if (textName == "PREFERENCE"){
+$("#preference .panel-body").addClass("bolder")
+$("#pace .panel-body,#performance .panel-body,#purpose .panel-body").removeClass("bolder")
+ }
+
+ else if (textName == "PURPOSE"){
+$("#purpose .panel-body").addClass("bolder")
+$("#pace .panel-body,#preference .panel-body,#performance .panel-body").removeClass("bolder")
+ }
+}
+}
+})
+
+$('.accordionText').click(function(){
+  $(this).addClass('accordionTextYellow').siblings().removeClass('accordionTextYellow')
+})
+
+$('.accordionTextmob').click(function(){
+  clearInterval(myInterval);
+  var windowsize = $(window).width();
+  var textName = $(this).text()
+$(this).addClass('accordionTextYellowMob').siblings().removeClass('accordionTextYellowMob')
+if (windowsize <=767){
+ console.log(textName)
+ if (textName == "PACE"){
+$("#pace .panel-body ").addClass("bolder")
+$("#performance .panel-body,#preference .panel-body,#purpose .panel-body").removeClass("bolder")
+ }
+
+ else if (textName == "PERFORMANCE"){
+$("#performance .panel-body").addClass("bolder")
+$("#pace .panel-body,#preference .panel-body,#purpose .panel-body").removeClass("bolder")
+ }
+
+ else if (textName == "PREFERENCE"){
+$("#preference .panel-body").addClass("bolder")
+$("#pace .panel-body,#performance .panel-body,#purpose .panel-body").removeClass("bolder")
+ }
+
+ else if (textName == "PURPOSE"){
+$("#purpose .panel-body").addClass("bolder")
+$("#pace .panel-body,#preference .panel-body,#performance .panel-body").removeClass("bolder")
+ }
+
+  
+}
+
+
+})
+
+
+
+
+
+
+
+
+var interValService;
+$(document).ready(function () {
+  var windowww = $(window).width();
+  if(windowww <= 767){
+
+ 
+$('.serviceTextMob').eq(0).addClass('serviceTextYellowMob');
+// $("#pace .panel-body ").addClass("bolder")
+
+interValService = setInterval(myTimer, 6000);
+var counterS = 1;
+// s
+function myTimer() {
+  var c = counterS % $('.serviceTextMob').length;
+  console.log(c)
+  $('.serviceTextMob').removeClass('serviceTextYellowMob');
+  $('.serviceTextMob').eq(c).addClass('serviceTextYellowMob');
+  var textName = $('.serviceTextMob').eq(c).addClass('serviceTextYellowMob').text()
+  console.log(textName)
+  counterS++;
+  if (textName == "EXPERIENCE"){
+$("#service11").show();
+$("#service22,#service33,#service44").hide();
+ }
+
+ else if (textName == "MARTECH"){
+  $("#service22").show();
+  $("#service11,#service33,#service44").hide();
+ }
+
+ else if (textName == "PERFORMANCE"){
+  $("#service33").show();
+  $("#service11,#service22,#service44").hide();
+ }
+
+ else if (textName == "ANALYTICS"){
+  $("#service44").show();
+  $("#service11,#service22,#service33").hide();
+ }
+}
+}
+})
+
+$('.serviceTextMob').click(function(){
+  clearInterval(interValService);
+  var windowsizee = $(window).width();
+  var textName = $(this).text()
+$(this).addClass('serviceTextYellowMob').siblings().removeClass('serviceTextYellowMob')
+if (windowsizee <=767){
+ console.log(textName)
+ if (textName == "EXPERIENCE"){
+$("#service11").show();
+$("#service22,#service33,#service44").hide();
+ }
+
+ else if (textName == "MARTECH"){
+  $("#service22").show();
+  $("#service11,#service33,#service44").hide();
+ }
+
+ else if (textName == "PERFORMANCE"){
+  $("#service33").show();
+  $("#service11,#service22,#service44").hide();
+ }
+
+ else if (textName == "ANALYTICS"){
+  $("#service44").show();
+  $("#service11,#service22,#service33").hide();
+ }
+
+  
+}
+
+
+})
+
+// $(document).ready(
+//     $('.collapse').on('show.bs.collapse hide.bs.collapse', function(e) {
+//         // e.preventDefault();
+//     }),
+  
+// );
+
+  $('.playHover').hover(function() {
+    $(this).attr('src','images/playiconyellow.png');  
+}, function() {
+  $(this).attr('src','images/playicon.png');  
+});
+
+  $(function () {
+            $("#footerSection").load("footer.html");
+        });
+
+  // $(document).ready(function() { 
+  //  $('#myCarousel').carousel({
+  //     interval: false,
+  //     autoplay:false,
+  // }) });;
+
+  $(document).ready(function () {
+
+    $('video').on('play', function (e) {
+
+       $(".carousel").carousel('pause');
+
+    });
+
+    $('video').on('stop pause ended', function (e) {
+      setTimeout(function () {
+        $(".carousel").carousel();
+}, 200);
+       
+
+    });
+
+
+  AOS.init();
+AOS.init({
+            duration: 1200,
+            once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, 
+  // disable: function() {
+  //   var maxWidth = 767;
+  //   return window.innerWidth < maxWidth;
+  // }
+        });
+})
+
+var $owl = $('.owl-carousel');
+
+$owl.owlCarousel({
+    loop: true,
+    margin:35,
+    navigation: true,
+    nav: false,
+  dots: true,
+    pagination: true,
+
+    responsiveClass: true,
+    autoplay: false,
+
+    responsive: {
+        0: {
+            items: 1
+        },
+        350: {
+            items: 1,
+    stagePadding: 35,
+
+        },
+        380: {
+            items: 1,
+    stagePadding: 35,
+    margin:30,
+
+        },
+        400: {
+            items: 1,
+    stagePadding: 35,
+
+        },
+        480: {
+            items: 1,
+    stagePadding: 40,
+
+        },
+        767: {
+            items: 1,
+           
+    stagePadding: 60,
+        },
+       
+    }
+});
+
+$(document).ready(function(){   
+  //show more option
+    var size_item = $('.workImg').length;
+    console.log(size_item,"workimg")
+    var v=2;
+    $('.workImg').hide(); // hide all divs with class `listing`
+    $('.workImg:lt('+v+')').show();
+    $('#loadMoreWork').click(function () {
+        v= (v+2 <= size_item) ? v+2 : size_item;
+        $('.workImg:lt('+v+')').show();
+        AOS.init();
+        // hide load more button if all items are visible
+        if($(".workImg:visible").length >= size_item ){
+           $("#loadMoreWork").hide();
+         
+      }
+    });
+});
+
+$(document).ready(function(){   
+  //show more option
+    var size_itemBlog = $('.blogImg').length;
+    console.log(size_itemBlog,"workimg")
+    var x=1;
+    $('.blogImg').hide(); // hide all divs with class `listing`
+    $('.blogImg:lt('+x+')').show();
+    $('#loadMoreBlog').click(function () {
+        x= (x+2 <= size_itemBlog) ? x+2 : size_itemBlog;
+        $('.blogImg:lt('+x+')').show();
+        AOS.init();
+        // hide load more button if all items are visible
+        if($(".blogImg:visible").length >= size_itemBlog ){ $("#loadMoreBlog").hide();  $("#btnBlog").css("padding-top",0)}
+    });
+});
+
+
+// $(".servicesText").click(function(){
+//  var textHTML =  $(this).text();
+//  console.log(textHTML)
+//  localStorage.setItem("clickedText", textHTML);
+//  location.href = 'services.html'
+// // var url = "services.html?service=" + textHTML;
+// // window.location.href = url;
+// })
+
+
+
+
+
+
+$(window).scroll(function(){
+    $(".carousel-caption").css("opacity", 1 - $(window).scrollTop() /200);
+    $(".carousel-indicators").css("opacity", 1 - $(window).scrollTop() /200);
+  });
+
+
+
+
+
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 1){
+            $(".navbar").addClass("fixedHeader")  
+            $(".firstItem img").attr("src","images/searchYellow.svg");
+            $(".secondItem img").attr("src","images/Optionsyellow.svg");
+            $(".vectorLogoW img").attr("src","images/vectorlogo black.svg");
+        }
+        else{
+          $(".navbar").removeClass("fixedHeader")  
+            $(".firstItem img").attr("src","images/searchWhite.svg");
+            $(".secondItem img").attr("src","images/Options Icon.svg");
+            $(".vectorLogoW img").attr("src","images/Vector Logo white.svg");
+        }
+
+    })
+})
+
+// $(document).ready(function(){
+//     $(window).scroll(function(){
+//         if($(window).scrollTop() > 1){
+//           $("#yellowMob").hide()  
+//         }
+//         else{
+//           $("#yellowMob").show()  
+//         }
+
+//     })
+// })
+
+
+// $("#pace .panel-body ").addClass("bolder")
+
+
+
+$('.servicesText').click(function(){
+$(this).addClass('servicesTextYellow').siblings().removeClass('servicesTextYellow')
+
+})
+
+
+
+
+
+
+// $('.serviceCollapse').on('shown.bs.collapse', function () {
+//             $(this).parent().find(".servicesText").addClass("servicesTextYellow").siblings().removeClass("servicesTextYellow");
+// })
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  $(".searchOpacity").addClass('open')
+ 
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  $(".searchOpacity").removeClass('open')
+}
+
+function openMenu() {
+  document.getElementById("menuOverlay").style.width = "100%";
+  
+    $(".opacityOverlay").addClass('open')
+ 
+
+}
+
+function closeMenu() {
+  document.getElementById("menuOverlay").style.width = "0%";
+  $(".opacityOverlay").removeClass('open')
+}
+
+function openMenuMob() {
+  document.getElementById("menuOverlayMob").style.width = "100%";
+    $("#yellowMob").hide()
+    $(".opacityOverlay").addClass('open')
+ 
+
+}
+
+function closeMenuMob() {
+  document.getElementById("menuOverlayMob").style.width = "0%";
+  $(".opacityOverlay").removeClass('open')
+  $("#yellowMob").show()
+}
+
+</script>
+
+<script src="js/script.js"></script>
+ 
+</body>
+
+    </html>

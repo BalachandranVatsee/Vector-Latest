@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+<link href="styles/bootstrap.min.css.map" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="styles/main.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<head>
+  <link rel="icon" type="images/x-icon" href="images/Vector-Logo.svg">
+    <title>Vector – Index Backup</title>
+    <!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q7JQV3RHL9');
+</script> -->
+</head>
+<style>
+  .panel {
+    -webkit-box-shadow: 0px!important;
+    box-shadow: 0px!important;
+}
+
+.playHover:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+</style>
+<body>
+  <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-content">
+      <p>Cookies & Privacy</p>
+      <p>This website uses cookies to ensure you get the best experience on our website.</p>
+      <div class="cookieButton">
+      <button id="accept-cookie" onclick="acceptCookies()">Accept</button>
+      <span id="close-cookie" onclick="closePopup()">x</span>
+      </div>
+    </div>
+  </div>
+    <nav class="navbar navbar-inverse sticky" id="navbarr">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <a class="vectorLogoW" href="index.html"><img class="vectorLogo" src="images/Vector Logo white.svg" alt="Vector logo" /></a>  
+          </div>
+         
+          <ul class="nav navbar-nav navbar-right">
+            <li class="searchMenu" style="display: none;"><a href="#" class="firstItem" onclick="openNav()"><img src="images/searchWhite.svg"></a></li>
+            <li class="opt"><a href="#" class="secondItem" onclick="openMenu()"><img src="images/Options Icon.svg"></a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <div id="myNav" class="overlay" style="display: none;">
+        <div class="searchOpacity">
+        <a class="overlayLogo"><img src="images/vectorlogo black.svg" alt="Vector logo" /></a> 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content overlaycontentSearch">
+          <div>
+            <div class="searchhh">
+              <input type="search" class="searchBtn" placeholder="Search">
+            </div>
+          </div>
+         
+        </div>
+        </div>
+      </div>
+
+      <div id="menuOverlay" class="overlay">
+        <div class="opacityOverlay">
+          <a class="overlayLogo"><img src="images/vectorlogo black.svg" alt="Vector logo" /></a> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+          <div class="overlay-content optionsoverr">
+            <div class="menuTextOptions">
+             <a href="aboutus.html">About Us</a>
+             <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a  href="values.html">DNA & VALUES</a><br>
+
+             <a href="work.html">WORK</a>
+             <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a href="services.html">SERVICES</a>
+             <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a href="client.html">CLIENTS</a><br>
+            
+             <a href="reachUs.html">REACH US</a>
+             <!-- <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+             <a href="blog.html">BLOG</a> -->
+            </div>
+  
+          
+           
+         
+          </div>
+        </div>
+        
+      </div>
+      
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item videoItem active">
+           <div>
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/GUJARAT TITANSX2 (1).mp4"/>
+            </video>
+           </div> 
+          
+            <div class="carousel-caption">
+            
+                <p class="firstTextCarousel">Gujarat Titans</p>
+                <p class="secondTextCarousel">AAVA DE&nbsp;
+                 <img src="images/playicon.png" class="playHover">
+                </p>
+               <img src="images/Path 26 (2).svg" class="downArrow">
+           
+          
+            </div>
+            
+          </div>
+      
+          <div class="item videoItem">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/TVSX2.mp4"/>
+            </video>
+            <div class="carousel-caption">
+              <p class="firstTextCarouselBig">A23 Games</p>
+              <p class="secondTextCarouselBig">CHALO SAATH KHELEIN&nbsp;
+                <span class="relativeSpan"><img src="images/playicon.png" class="playHover"></span>
+                </p>
+             <img src="images/Path 26 (2).svg" class="downArrowBig">
+            </div>
+          </div>
+      
+          <div class="item videoItem">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/TVSX2.mp4"/>
+            </video>
+          
+            <div class="carousel-caption" >
+            
+                <p class="firstTextCarouselBigTVS">TVS Tyres</p>
+                <p class="secondTextCarouselBig">COUNTRY FULL OF TURNS&nbsp;
+                  <span class="relativeSpan"><img src="images/playicon.png" class="playHover"></span>
+                </p>
+               <img src="images/Path 26 (2).svg" class="downArrowBigTVS">
+           
+          
+            </div>
+          </div>
+
+          <div class="item videoItem">
+            <video loop="loop" muted="muted" autoplay="autoplay">
+              <source src="videos/TVSX2.mp4">
+              </video>
+              <div class="carousel-caption">
+                <p class="firstTextCarouselPlayR">A23 Games</p>
+                <p class="secondTextCarouselPlayR">PLAY RESPONSIBLY&nbsp;
+                  <span class=""><img src="images/playicon.png" class="playHover"></span>
+                  </p>
+               <img src="images/Path 26 (2).svg" class="downArrowBigPlayR">
+              </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+
+
+      <div class="yellowStrip">
+        <p><span>Pace</span> <img src="images/yellowStripArrow.svg"> <span>Preference</span> <img src="images/yellowStripArrow.svg"> <span> Purpose</span> <img src="images/yellowStripArrow.svg"> <span>Performance</span></p>
+      </div>
+
+      <div style="background-color:#ffffff ;position: absolute;width: 100%;">
+   
+      <div class="container" style="padding: 0;">
+        <p class="sectionHeaderFirst" data-aos="fade-up" style="line-height: .9;padding-top: 75px;">
+          A new direction for building <br>brands through the line
+        </p>
+
+        <p class="newAngle" data-aos="fade-up" data-aos-delay="100"> We drive high brand value and performance while building brands, both online and offline. </p>
+
+       
+        
+
+          <div style="padding-top: 60px;" >
+            <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+          </div>
+
+        
+          <p class="sectionHeader" data-aos="fade-up" data-aos-delay="500">OUR BELIEF</p>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+
+              <!-- <div class="nav-mob-tab-height" style="background-color: #1072BA;"
+              data-toggle="collapse" data-target="#demo" data-parent="#mainNavmobile">
+              <a class="nav-mob-tab-head">Our Collections</a><br> -->
+
+
+              <!-- <div class="accordionText" data-aos="fade-right" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-aos-delay="300" data-target="#pace">PACE
+                <a ></a>
+              </div>
+              <div class="arrowSign" data-aos="arrow" data-aos-delay="600">
+                <img src="images/smallArrow.svg">
+              </div>
+
+              <div class="accordionText" style="float: left;" data-aos="new-animation" data-toggle="collapse" data-parent="#accordion" data-target="#performance"
+              data-aos-easing="ease-out-cubic" data-aos-delay="900">
+             PERFORMANCE
+              </div>
+              <div style="clear: both;"></div>
+
+    
+             
+              <div data-aos-delay="1200" class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#preference" data-aos="fade-right" data-aos-easing="ease-out-cubic">
+          PREFERENCE
+                
+              </div>
+              <div class="arrowSign" data-aos="arrow" data-aos-delay="1500">
+                <img src="images/smallArrow.svg">
+              </div>
+              <div class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#purpose" data-aos="new-animation"
+              data-aos-easing="ease-out-cubic" data-aos-delay="1800"
+              >PURPOSE
+              </div>
+              <div style="clear: both;"></div> -->
+             <div data-aos="fade-up" data-aos-delay="600">
+              <div class="accordionText"  style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#pace">PACE
+                <a ></a>
+              </div>
+              <div class="arrowSign">
+                <img src="images/smallArrow.svg">
+              </div>
+
+              <div class="accordionText" style="float: left;"  data-toggle="collapse" data-parent="#accordion" data-target="#performance">
+             PERFORMANCE
+              </div>
+              <div style="clear: both;"></div>
+
+    
+             
+              <div class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#preference">
+          PREFERENCE
+                
+              </div>
+              <div class="arrowSign">
+                <img src="images/smallArrow.svg">
+              </div>
+              <div class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#purpose" >PURPOSE
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            </h4>
+          </div>
+   
+          <div id="pace" class="panel-collapse collapse">
+            <div class="panel-body">
+              For today’s finger scrolling, #Tagtrending, in the moment consumer, we understand that speed and agility is 
+              key to maximizing and leveraging brand & business impact opportunities </div>
+          </div>
+
+          <div id="performance" class="panel-collapse collapse">
+            <div class="panel-body">Brand initiatives are directly measured
+
+              by ROMI and you cannot improve what
+              
+              you do not measure. We deliver
+              
+              strategic goal based solutions in a
+              
+              scientific, transparent and measurable
+              
+              manner.</div>
+          </div>
+
+          <div id="preference" class="panel-collapse collapse">
+            <div class="panel-body">In a world of near infinite choices and
+
+              dwindling differentiation, we believe
+              
+              that creatively distinct brand narratives
+              
+              and interventions build & sustain
+              
+              positive consumer mental availability.</div>
+          </div>
+
+          <div id="purpose" class="panel-collapse collapse">
+            <div class="panel-body">Brand purpose is key for today’s
+
+              consumers’ who are relentlessly seeking
+              
+              meaning through their purchases. We
+              
+              ensure that the brand credo is reflected
+              
+              undiluted through the funnel. </div>
+          </div>
+        </div>
+       
+       
+      </div> 
+
+  
+      <div style="padding-top: 60px;">
+        <img src="images/yellowLinee_1.png" style="height: 100%;" data-aos="arrow-animation">
+      </div>
+ 
+  <p class="sectionHeader" data-aos="fade-up">WORK</p> 
+    
+      <div class="workImg">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html';" src="images/workAsset1.png" class="img-responsive"></div> 
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+  <p class="workTitile" onclick="location.href = 'workInner.html';">#ChaloSaathKhelein</p>
+  <p class="workType">A23</p>
+  <p class="workDescription">A23 games wanted to rebrand itself as a premium gaming platform where gamers from all aspects of life can come and enjoy gaming to their hearts content
+    We roped in the KingKhan as the brand ambassador to communicate about the different ‘master’ gamers who come to play on A23 and celebrate them. All through the lens of SRK and what he is best known for.</p>
+  </div> 
+  </div>
+  <div style="clear: both;"></div>
+</div>
+<div class="workImg">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding" data-aos="fade-up">
+    <p class="workTitile text-right" onclick="location.href = 'workInner.html';">#PlayResponsibly</p>
+  <p class="workType text-right">A23</p>
+  <p class="workDescription text-right">Where gaming platforms promise mega prizes and winning big, Vector and A23 urged gamers to play responsibly. In a first-of-its kind communication from any gaming platform we got King Khan explains the mandatory disclaimer in a layman’s words and continues to explain why gaming during family get-togethers is anti-social. And why it is important to put their phone aside while on the dining table, a phenomena we get to see in every household.</p>
+
+  </div> 
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/workAsset2.png" class="img-responsive" onclick="location.href = 'workInner.html';"></div>  
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+ 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/workAsset3.png" class="img-responsive" onclick="location.href = 'workInner.html';"></div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+ <p class="workTitile" onclick="location.href = 'workInner.html';">#AavaDe</p>
+ <p class="workType">Gujarat Titans</p>
+ <p class="workDescription">What a privilege and joy to have gotten the chance to make a teeny weeny contribution at the very beginning of a brand/team's journey. Amongst it all - the team name, the team logo and the team chant!</p>
+ </div> 
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding" data-aos="fade-up">
+   <p class="workTitile text-right" onclick="location.href = 'workInner.html';">#WhistleThroughEveryTurn</p>
+ <p class="workType text-right">TVS Eurogrip Tyres</p>
+ <p class="workDescription text-right">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+
+ </div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html';" src="images/workAsset4.png" class="img-responsive"></div>  
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+ 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/workAsset5.png" class="img-responsive" onclick="location.href = 'workInner.html';"></div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding" data-aos="fade-up">
+ <p class="workTitile" onclick="location.href = 'workInner.html';">#A23WinningMove</p>
+ <p class="workType">A23</p>
+ <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+ </div> 
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="workImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding" data-aos="fade-up">
+   <p class="workTitile text-right" onclick="location.href = 'workInner.html';">#WinnersKaHomeGround</p>
+ <p class="workType text-right">A23</p>
+ <p class="workDescription text-right">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+
+ </div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img onclick="location.href = 'workInner.html';" src="images/workAsset4.png" class="img-responsive"></div>  
+ </div>
+ <div style="clear: both;"></div>
+</div>
+  <div class="btnSec" data-aos="zoom-in">
+    <button type="submit" class="workBtn" id="loadMoreWork">Load More Work</button>
+  </div>
+
+  <div style="padding-top: 60px;" >
+    <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+  </div>
+
+
+  <p class="sectionHeader" data-aos="fade-up">SERVICES</p>
+  <div class="panel-group" id="services">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+
+<div data-aos="fade-up">
+     <div data-toggle="collapse" data-parent="#services" data-target="#service1" class="servicesText" style="float: left;">BRAND DEVELOPMENT</div>
+          <div class="arrowSignService">
+            <img src="images/arrowservice.png">
+          </div>
+        
+          <div style="float:left;" data-toggle="collapse" data-parent="#services" data-target="#service2" class="servicesText"
+         >BRAND COMMUNICATION</div>
+
+          <div style="clear: both;"></div>
+
+
+          <div data-toggle="collapse" data-parent="#services" data-target="#service3" class="servicesText" style="float: left;">STUDIO & CONTENT</div>
+          <div class="arrowSignService">
+            <img src="images/arrowservice.png">
+          </div>
+          <div style="float:left;" data-toggle="collapse" data-parent="#services" data-target="#service4" class="servicesText">DIGITAL MARKETING</div>
+
+            <div style="clear: both;"></div>
+
+
+          <div data-toggle="collapse" data-parent="#services" data-target="#service5" class="servicesText" style="float: left;">ECOMMERCE SOLUTIONING </div>
+          <div class="arrowSignService">
+            <img src="images/arrowservice.png">
+          </div>
+          <div style="float: left;" data-toggle="collapse" data-parent="#services" data-target="#service6" class="servicesText">DEMAND GENERATION</div>
+
+            <div style="clear: both;"></div>
+
+          <div data-toggle="collapse" data-parent="#services" data-target="#service7" class="servicesText" style="float: left;">CUSTOMER RETENTION</div>
+          <div class="arrowSignService">
+            <img src="images/arrowservice.png">
+          </div>
+
+          <div style="float: left;" data-toggle="collapse" data-parent="#services" data-target="#service8" class="servicesText">ANALYTICS & INTELLIGENCE</div>
+            <div style="clear: both;"></div>
+          </div>
+        </h4>
+      </div>
+
+      <div id="service1" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service1_1.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            Audible brand value. Delivering a distinct, singular and consistent brand voice across platforms is at our core.
+          </div>
+       </div>
+      </div>
+
+      <div id="service2" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service2_2.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            Authentic brand experiences. Building customer connections in the direct-to-consumer economy through owned channels or through affiliate channels.
+          </div>
+        </div>
+      </div>
+
+      <div id="service3" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service3.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            Intuitive designs sparks conversation. Keeping pace in our fast world requires a brand focused design repository that facilitates cohesive communication in a timely fashion. 
+        </div>
+        </div>
+      </div>
+
+      <div id="service4" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service4.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            Leverage digital channels profitably. A clear understanding of technology at every level of requirement is what we offer.
+            Right from set-up to managing complex systems and delivering end outcomes. 
+          </div>
+        </div>
+      </div>
+
+      <div id="service5" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service5.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">Navigating all stages of the business cycle requires  design-to-sales-generation solutions. Website design and development, eCommerce enablement, product stories and more.</div>
+        </div>
+      </div>
+
+      <div id="service6" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service6.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">Cultivate audiences by seeding informative and engaging content and conversations across platforms. Generate brand awareness, build trust, nurture future relationships.</div></div>
+      </div>
+
+      <div id="service7" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service7.png" style="width:70%;">
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+           
+              Increase customer lifetime value by continuously engaging customers through D2C channels.</div></div>
+     
+          </div>
+         
+         
+
+      <div id="service8" class="serviceCollapse panel-collapse collapse">
+        <div class="panel-body">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding" >
+            <div class="square">
+              <img src="images/service8.png" style="width:70%;">
+            </div>
+          </div>
+          <div  class="col-lg-10 col-md-10 col-sm-10 col-xs-12">Enhance product, brand and user experience with data led (transaction, website behaviour) insights generated by D2C platforms.</div>
+      </div></div>
+
+    </div>
+   
+   
+  </div> 
+ 
+
+  <div style="padding-top: 60px;" >
+    <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+  </div>
+
+
+  <!-- <p class="sectionHeader" data-aos="fade-up">BLOG</p>
+  <div class="blogImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"></div> 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPaddingBlog" data-aos="fade-up">
+   <p class="workTitile" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+   <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+   </div> 
+   </div>
+<div style="clear: both;"></div>
+</div>
+
+<div class="blogImg">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPaddingBlog" data-aos="fade-up">
+   <p class="workTitile text-right" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+ <p class="workDescription text-right">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+
+ </div> 
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"  style="cursor: pointer;"></div>  
+ </div>
+ <div style="clear: both;"></div>
+</div>
+
+<div class="blogImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"></div> 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPaddingBlog" data-aos="fade-up">
+   <p class="workTitile" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+   <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+   </div> 
+   </div>
+<div style="clear: both;"></div>
+</div>
+<div class="blogImg">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPaddingBlog" data-aos="fade-up">
+     <p class="workTitile text-right" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+   <p class="workDescription text-right">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+  
+   </div> 
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"  style="cursor: pointer;"></div>  
+   </div>
+   <div style="clear: both;"></div>
+  </div>
+  
+  <div class="blogImg">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+  
+    
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;"><img src="images/blog.png" class="img-responsive" onclick="location.href = 'blogInner.html';"></div> 
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPaddingBlog" data-aos="fade-up">
+     <p class="workTitile" onclick="location.href = 'blogInner.html';">Lorem ipsum</p>
+     <p class="workDescription">Lorem ipsum dolor sit amet, cdevysc consectetuer adipiscing elit, sed dia nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat rg</p>
+     </div> 
+     </div>
+  <div style="clear: both;"></div>
+  </div>
+<div class="btnSec" data-aos="zoom-in" id="btnBlog">
+  <button type="submit" class="workBtn" id="loadMoreBlog">Load More</button>
+</div>
+<div style="padding-top: 60px;" >
+  <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+</div> -->
+
+<div id="footerSection">
+</div>
+
+</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// $(".playHover").hover(function(){  
+//   $(this).attr('src','images/playiconyellow.png');   
+  
+//   }); 
+
+  $('.playHover').hover(function() {
+    $(this).attr('src','images/playiconyellow.png');  
+}, function() {
+  $(this).attr('src','images/playicon.png');  
+});
+
+  $(function () {
+            $("#footerSection").load("footer.html");
+        });
+
+  // $(document).ready(function() { 
+  //  $('#myCarousel').carousel({
+  //     interval: false,
+  //     autoplay:false,
+  // }) });;
+
+  $(document).ready(function () {
+
+    $('video').on('play', function (e) {
+
+       $(".carousel").carousel('pause');
+
+    });
+
+    $('video').on('stop pause ended', function (e) {
+      setTimeout(function () {
+        $(".carousel").carousel();
+}, 200);
+       
+
+    });
+
+
+  AOS.init();
+AOS.init({
+            duration: 1200,
+            once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, 
+        });
+})
+
+$(document).ready(function(){   
+  //show more option
+    var size_item = $('.workImg').length;
+    console.log(size_item,"workimg")
+    var v=2;
+    $('.workImg').hide(); // hide all divs with class `listing`
+    $('.workImg:lt('+v+')').show();
+    $('#loadMoreWork').click(function () {
+        v= (v+2 <= size_item) ? v+2 : size_item;
+        $('.workImg:lt('+v+')').show();
+        AOS.init();
+        // hide load more button if all items are visible
+        if($(".workImg:visible").length >= size_item ){
+           $("#loadMoreWork").hide();
+         
+      }
+    });
+});
+
+$(document).ready(function(){   
+  //show more option
+    var size_itemBlog = $('.blogImg').length;
+    console.log(size_itemBlog,"workimg")
+    var x=1;
+    $('.blogImg').hide(); // hide all divs with class `listing`
+    $('.blogImg:lt('+x+')').show();
+    $('#loadMoreBlog').click(function () {
+        x= (x+2 <= size_itemBlog) ? x+2 : size_itemBlog;
+        $('.blogImg:lt('+x+')').show();
+        AOS.init();
+        // hide load more button if all items are visible
+        if($(".blogImg:visible").length >= size_itemBlog ){ $("#loadMoreBlog").hide();  $("#btnBlog").css("padding-top",0)}
+    });
+});
+
+
+// $(".servicesText").click(function(){
+//  var textHTML =  $(this).text();
+//  console.log(textHTML)
+//  localStorage.setItem("clickedText", textHTML);
+//  location.href = 'services.html'
+// // var url = "services.html?service=" + textHTML;
+// // window.location.href = url;
+// })
+
+
+
+
+
+
+$(window).scroll(function(){
+    $(".carousel-caption").css("opacity", 1 - $(window).scrollTop() /200);
+    $(".carousel-indicators").css("opacity", 1 - $(window).scrollTop() /200);
+  });
+
+
+
+//   (function(){
+
+// var doc = document.documentElement;
+// var w = window;
+
+// var prevScroll = w.scrollY || doc.scrollTop;
+// var curScroll;
+// var direction = 0;
+// var prevDirection = 0;
+// var st = $(this).scrollTop();
+// var header = document.getElementById('navbarr');
+
+// var checkScroll = function() {
+
+//   /*
+//   ** Find the direction of scroll
+//   ** 0 - initial, 1 - up, 2 - down
+//   */
+
+//   curScroll = w.scrollY || doc.scrollTop;
+//   if (curScroll > prevScroll) { 
+//     console.log("hello going down")
+//     //scrolled up
+//     direction = 2;
+//   }
+//   else if (curScroll < prevScroll) { 
+//     console.log("hello2 going up")
+//     //scrolled down
+//     direction = 1;
+//   }
+ 
+
+//   if (direction !== prevDirection) {
+//     toggleHeader(direction, curScroll);
+  
+//     // $(".navbar").removeClass("fixedHeader") 
+//   }
+
+//   prevScroll = curScroll;
+
+// };
+
+// var toggleHeader = function(direction, curScroll) {
+//   if (direction === 2 && curScroll >102) { 
+
+//     //replace 52 with the height of your header in px
+
+//     header.classList.add('hide');
+//     prevDirection = direction;
+//     console.log("what")
+//   }
+//   else if (direction === 1) {
+//     header.classList.remove('hide');
+//     prevDirection = direction;
+//     console.log("what2")
+//     $(".navbar").addClass("fixedHeader") 
+//     $(".firstItem img").attr("src","images/searchYellow.svg");
+//             $(".secondItem img").attr("src","images/Optionsyellow.svg");
+//             $(".vectorLogoW img").attr("src","images/vectorlogo black.svg");
+//   }
+ 
+// };
+
+// window.addEventListener('scroll', checkScroll);
+
+// })();
+
+// $(window).scroll(function() {
+//     var height = $(window).scrollTop();
+
+//     if(height  < 100) {
+//       console.log("top")
+//       $(".navbar").removeClass("fixedHeader");
+//       $(".firstItem img").attr("src","images/searchWhite.svg");
+//             $(".secondItem img").attr("src","images/Options Icon.svg");
+//             $(".vectorLogoW img").attr("src","images/Vector Logo white.svg");
+//     }
+// });
+
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 1){
+            $(".navbar").addClass("fixedHeader")  
+            $(".firstItem img").attr("src","images/searchYellow.svg");
+            $(".secondItem img").attr("src","images/Optionsyellow.svg");
+            $(".vectorLogoW img").attr("src","images/vectorlogo black.svg");
+        }
+        else{
+          $(".navbar").removeClass("fixedHeader")  
+            $(".firstItem img").attr("src","images/searchWhite.svg");
+            $(".secondItem img").attr("src","images/Options Icon.svg");
+            $(".vectorLogoW img").attr("src","images/Vector Logo white.svg");
+        }
+
+    })
+})
+
+
+// $('.collapse').on('shown.bs.collapse', function () {
+//   // $(this).parent().find(".machinery-mob-head").removeClass("machinery-mob-head").addClass(
+//   //               "machinery-mob-head-red");
+
+//   //           $(this).parent().find(".accordionText").removeClass("accordionText").addClass(
+//   //               "accordionTextYellow");
+//                 $(this).parent().find(".accordionText").addClass("accordionTextYellow").siblings().removeClass("accordionTextYellow");
+
+//           })
+$('.accordionText').click(function(){
+$(this).addClass('accordionTextYellow').siblings().removeClass('accordionTextYellow')
+})
+
+$('.servicesText').click(function(){
+$(this).addClass('servicesTextYellow').siblings().removeClass('servicesTextYellow')
+})
+
+
+
+
+
+
+// $('.serviceCollapse').on('shown.bs.collapse', function () {
+//             $(this).parent().find(".servicesText").addClass("servicesTextYellow").siblings().removeClass("servicesTextYellow");
+// })
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  $(".searchOpacity").addClass('open')
+ 
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  $(".searchOpacity").removeClass('open')
+}
+
+function openMenu() {
+  document.getElementById("menuOverlay").style.width = "100%";
+  
+    $(".opacityOverlay").addClass('open')
+ 
+
+}
+
+function closeMenu() {
+  document.getElementById("menuOverlay").style.width = "0%";
+  $(".opacityOverlay").removeClass('open')
+}
+
+
+
+</script>
+
+<script src="js/script.js"></script>
+ 
+</body>
+
+    </html>

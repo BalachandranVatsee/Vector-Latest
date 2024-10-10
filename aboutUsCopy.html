@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+<link href="styles/bootstrap.min.css.map" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+<link href="styles/aboutus.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<head>
+  <link rel="icon" type="images/x-icon" href="images/Vector-Logo.svg">
+    <title>Vector – About Us Copy</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q7JQV3RHL9');
+</script>
+</head>
+<style>
+  .panel {
+    -webkit-box-shadow: 0px!important;
+    box-shadow: 0px!important;
+}
+
+</style>
+<body>
+  <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-content">
+      <p>Cookies & Privacy</p>
+      <p>This website uses cookies to ensure you get the best experience on our website.</p>
+      <div class="cookieButton">
+      <button id="accept-cookie" onclick="acceptCookies()">Accept</button>
+      <span id="close-cookie" onclick="closePopup()">x</span>
+      </div>
+    </div>
+  </div>
+<nav class="navbar navbar-inverse sticky" id="navbarr">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="vectorLogoW" href="index.html"><img class="vectorLogo" src="images/vectorlogo black.svg" alt="Vector logo" /></a>  
+      </div>
+     
+      <ul class="nav navbar-nav navbar-right">
+    
+        <li><a href="#" class="secondItem" onclick="openMenu()"><img src="images/Optionsyellow.svg"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="menuOverlay" class="overlay">
+    <div class="opacityOverlay">
+      <a class="overlayLogo"><img src="images/vectorlogo black.svg" alt="Vector logo" /></a> 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+      <div class="overlay-content">
+        <div class="menuTextOptions">
+         <a href="aboutus.html">About Us</a>
+         <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+         <a>DNA & VALUES</a><br>
+
+         <a href="work.html">WORK</a>
+         <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+         <a href="services.html">SERVICES</a>
+         <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+         <a href="client.html">CLIENTS</a><br>
+        
+         <a>CAREERS</a>
+         <a class="arrowOverlay"><img src="images/yellowArrow.svg"></a>
+         <a href="blog.html">BLOG</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="container" style="padding: 180px 0 0 0;">
+      <!-- <p class="sectionHeader" style="padding-top:150px;" data-aos="fade-up">OUR BELIEF</p> -->
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+
+              <!-- <div class="nav-mob-tab-height" style="background-color: #1072BA;"
+              data-toggle="collapse" data-target="#demo" data-parent="#mainNavmobile">
+              <a class="nav-mob-tab-head">Our Collections</a><br> -->
+
+
+              <div class="accordionText" data-aos-delay="300" data-aos="fade-right" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#pace">PACE
+                <a ></a>
+              </div>
+              <div class="arrowSign" data-aos="arrow" data-aos-delay="600">
+                <img src="images/smallArrow.svg">
+              </div>
+
+              <div class="accordionText" style="float: left;" data-aos="new-animation" data-toggle="collapse" data-parent="#accordion" data-target="#performance"
+              data-aos-easing="ease-out-cubic" data-aos-delay="900">
+             PERFORMANCE
+              </div>
+              <div style="clear: both;"></div>
+
+    
+             
+              <div data-aos-delay="1200" class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#preference" data-aos="fade-right" data-aos-easing="ease-out-cubic">
+          PREFERENCE
+                
+              </div>
+              <div class="arrowSign" data-aos="arrow" data-aos-delay="1500">
+                <img src="images/smallArrow.svg">
+              </div>
+              <div class="accordionText" style="float: left;" data-toggle="collapse" data-parent="#accordion" data-target="#purpose" data-aos="new-animation"
+              data-aos-easing="ease-out-cubic" data-aos-delay="1800"
+              >PURPOSE
+              </div>
+              <div style="clear: both;"></div>
+             
+         
+            
+            </h4>
+          </div>
+   
+          <div id="pace" class="panel-collapse collapse">
+            <div class="panel-body">PACE Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+
+          <div id="performance" class="panel-collapse collapse">
+            <div class="panel-body">PERFORMANCE Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+
+          <div id="preference" class="panel-collapse collapse">
+            <div class="panel-body">PREFERENCE Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+
+          <div id="purpose" class="panel-collapse collapse">
+            <div class="panel-body">PURPOSE Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut.</div>
+          </div>
+        </div>
+       
+       
+      </div> 
+
+      <div style="padding-top: 60px;" >
+        <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+      </div>
+
+
+
+        <p class="sectionHeader" data-aos="fade-up">THE TEAM</p>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;" data-aos="fade-right">
+              <img src="images/about2.svg" class="img-responsive teamIMg" style=" margin-left: auto;">
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding">
+           <div class="displayFlex">
+            <p class="workTitile" data-aos="name-Right" data-aos-delay="200">Tushar Bhatia</p>
+             <img src="images/smallArrow.svg" class="smallArrow" data-aos="name-RightLess" data-aos-delay="400">
+            <p class="workTitile" data-aos="name-RightLessLast" data-aos-delay="600"> Business</p>
+           </div>
+           
+
+           <p class="workDescription" data-aos="name-Right" data-aos-delay="800">Tushar Bhatia has joined Vector as a Senior Director – Business, after his stint at Maple where he was the Chief Marketing Officer leading the function. He has over 19 years of experience across advertising and marketing stints, across continents too.</p>
+           </div> 
+           </div>
+           <div style="clear: both;"></div>
+
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 leftTextPadding">
+              <div class="displayFlex" style="justify-content: end;">
+             <p class="workTitile text-right" data-aos="name-left" data-aos-delay="600">Creative</p>
+               <img src="images/smallarrow Bl.svg" data-aos="name-leftLess" data-aos-delay="400" class="smallArrow" > 
+               <p class="workTitile" data-aos="name-LeftLessLast" data-aos-delay="200">Ripanka Kalita</p>
+              </div>
+
+           <p class="workDescription text-right" data-aos="name-left" data-aos-delay="800">Ripanka Kalita has joined Vector as Director – Creative. With over 17 years of experience across Mullen Lintas, Leo Burnett, McCann Erickson, Grey Worldwide and Infectious, Ripanka has crafted distinct brand stories.
+           </p>
+         
+           </div> 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;" data-aos="fade-left" data-aos-delay="500"><img src="images/about3.svg" class="img-responsive teamIMg" style=" margin-right: auto;"></div>  
+           </div>
+           <div style="clear: both;"></div>
+
+
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+
+  
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 noPadding" style="padding-left: 0;" data-aos="fade-right"><img src="images/about1.svg" class="img-responsive teamIMg" style=" margin-left: auto;"></div> 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rightTextPadding">
+  
+           <div class="displayFlex">
+            <p class="workTitile" data-aos="name-Right" data-aos-delay="200">Mandar Gore</p>
+             <img src="images/smallArrow.svg" class="smallArrow" data-aos="name-RightLess" data-aos-delay="400">
+            <p class="workTitile" data-aos="name-RightLessLast" data-aos-delay="600"> Strategy</p>
+           </div>
+           <p class="workDescription" data-aos="name-Right" data-aos-delay="800">Mandar Gore has moved within the group as Senior Director – Strategy. At Tilt Brand Solutions, he was leading strategy on brands like Licious, Livspace, 24 Mantra, The Pink Foundry, Groww, Swiggy to name a few. Mandar had joined.
+           </p>
+           </div> 
+           </div>
+           <div style="clear: both;"></div>
+           <div style="padding-top: 60px;" >
+            <img src="images/yellowLinee_1.png" data-aos="arrow-animation" style="height: 100%;">
+          </div>
+
+
+          <div style="padding-top: 60px;margin-bottom: 55px;" data-aos="fade-up">
+
+
+  
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"  style="padding-left: 0;padding-right:10px;">
+              <img src="images/Group 47.svg" style="width: 80%;">
+            </div> 
+        
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: center;padding-left: 0;border-left: solid 1px #ffdf24;">
+              <div style="display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; text-align: left;">
+                <p class="footerText" onclick="location.href = 'aboutus.html';">ABOUT US</p>
+                <p class="footerText" onclick="location.href = 'services.html';">SERVICES</p>
+                <p class="footerText" onclick="location.href = 'work.html';">WORK</p>
+                 <p class="footerText" onclick="location.href = 'client.html';">CLIENTS</p>
+                <p class="footerText">CAREERS</p>
+                <p class="footerText" onclick="location.href = 'blog.html';">BLOG</p>
+              </div>
+        
+            </div> 
+        
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 noPadding" style="text-align: center;">
+             <p class="arrowFooter">
+               <img src="images/smallArrow.svg">
+             </p>
+               </div> 
+        
+               <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12 noPadding" style="text-align: center;">
+                <div style="display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; text-align: left;">
+        
+                
+                <p class="textBold">New Business Enquiries</p>
+                  <p class="textLight"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=tushar.bhatia@vectorbrands.in" target="_blank">tushar.bhatia@vectorbrands.in</a> </p>
+                  <p>&nbsp;</p>
+                  <p class="textBold">Careers Enquiries</p>
+                  <p class="textLight"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=michelle.suradkar@tiltbrands.in" target="_blank"> michelle.suradkar@tiltbrands.in</a></p>
+                </div>
+                 </div> 
+        
+                 <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 noPadding">
+                  <img src="images/smallArrow.svg">
+                    </div> 
+        
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 noPadding" style="text-align: center;">
+                      <div style="display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; text-align: left;">
+                        <p class="textBold">  Vector Brand Solutions Pvt. Ltd.</p>
+                        <p class="textLight">  #501, Peninsula Towers, Peninsula Corporate Park,
+                          Lower Parel, Mumbai 400 013.</p>
+                          
+                          <p style="font-size: 15px;">
+                           <span class="relPosition">
+                            <img src="images/Path 45.svg" style="vertical-align: baseline;">&nbsp;+91 22 4672 3400
+                           </span>
+                            &nbsp;&nbsp;<span class="straightLine">|</span>&nbsp;&nbsp;  <img src="images/Group 50.svg" class="socialIcons"><img src="images/Group 70.svg" class="socialIcons"><img src="images/Group 57.svg" class="socialIcons"><img src="images/Group 60.svg" class="socialIconsYt">   
+                          </p>
+                                         
+                      </div>
+                  
+                       </div>
+        
+                  
+          
+          
+        
+        <div style="clear: both;"></div>
+        </div>
+
+</div>
+
+
+<div class="yellowStrip">
+  <p><span>Pace</span> <img src="images/yellowStripArrow.svg"> <span>Preference</span> <img src="images/yellowStripArrow.svg"> <span> Purpose</span> <img src="images/yellowStripArrow.svg"> <span>Performance</span></p>
+</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+AOS.init();
+AOS.init({
+            duration: 1200,
+            once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, 
+        });
+
+
+//       $(document).ready(function(){
+//     $(window).scroll(function(){
+//         if($(window).scrollTop() > 50){
+//             $(".navbar").addClass("fixedHeader")  
+           
+//         }
+//         else{
+//           $(".navbar").removeClass("fixedHeader")  
+  
+//         }
+
+//     })
+// })
+
+(function(){
+
+var doc = document.documentElement;
+var w = window;
+
+var prevScroll = w.scrollY || doc.scrollTop;
+var curScroll;
+var direction = 0;
+var prevDirection = 0;
+var st = $(this).scrollTop();
+var header = document.getElementById('navbarr');
+
+var checkScroll = function() {
+
+  /*
+  ** Find the direction of scroll
+  ** 0 - initial, 1 - up, 2 - down
+  */
+
+  curScroll = w.scrollY || doc.scrollTop;
+  if (curScroll > prevScroll) { 
+    console.log("hello going down")
+    //scrolled up
+    direction = 2;
+  }
+  else if (curScroll < prevScroll) { 
+    console.log("hello2 going up")
+    //scrolled down
+    direction = 1;
+  }
+ 
+
+  if (direction !== prevDirection) {
+    toggleHeader(direction, curScroll);
+  
+    // $(".navbar").removeClass("fixedHeader") 
+  }
+
+  prevScroll = curScroll;
+
+};
+
+var toggleHeader = function(direction, curScroll) {
+  if (direction === 2 && curScroll > 52) { 
+
+    //replace 52 with the height of your header in px
+
+    header.classList.add('hide');
+    prevDirection = direction;
+    console.log("what")
+  }
+  else if (direction === 1) {
+    header.classList.remove('hide');
+    prevDirection = direction;
+    console.log("what2")
+    $(".navbar").addClass("fixedHeader") 
+    $(".firstItem img").attr("src","images/searchYellow.svg");
+            $(".secondItem img").attr("src","images/Optionsyellow.svg");
+            $(".vectorLogoW img").attr("src","images/vectorlogo black.svg");
+  }
+ 
+};
+
+window.addEventListener('scroll', checkScroll);
+
+})();
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+
+    if(height  == 0) {
+      console.log("top")
+      $(".navbar").removeClass("fixedHeader");
+      // $(".firstItem img").attr("src","images/searchWhite.svg");
+      //       $(".secondItem img").attr("src","images/Options Icon.svg");
+      //       $(".vectorLogoW img").attr("src","images/Vector Logo white.svg");
+    }
+});
+
+
+$('.accordionText').click(function(){
+$(this).addClass('accordionTextYellow').siblings().removeClass('accordionTextYellow')
+})
+
+function openMenu() {
+  document.getElementById("menuOverlay").style.width = "100%";
+  
+    $(".opacityOverlay").addClass('open')
+ 
+
+}
+
+function closeMenu() {
+  document.getElementById("menuOverlay").style.width = "0%";
+  $(".opacityOverlay").removeClass('open')
+}
+</script>
+
+<script src="js/script.js"></script>
+
+    </body>
+    </html>
