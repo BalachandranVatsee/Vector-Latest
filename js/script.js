@@ -35,13 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function addGtag(){
-    var addGoogleAnalytics = document.createElement("script");
-    addGoogleAnalytics.setAttribute("src","https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9");
-    addGoogleAnalytics.async = "true";
-    document.head.appendChild(addGoogleAnalytics);
-
-    var addDataLayer = document.createElement("script");
-    var dataLayerData = document.createTextNode("window.dataLayer = window.dataLayer || []; \n function gtag(){dataLayer.push(arguments);} \n gtag('js', new Date()); \n gtag('config', 'G-Q7JQV3RHL9');");
-    addDataLayer.appendChild(dataLayerData);
-    document.head.appendChild(addDataLayer);
+    var grantButton = document.getElementById("accept-cookie");
+ 
+    localStorage.setItem("cookiesAccepted", "true");
+     // Load gtag.js script
+     let gtagScript = document.createElement('script');
+     gtagScript.async = true;
+     gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9';
+     let firstScript = document.getElementsByTagName('script')[0];
+     firstScript.parentNode.insertBefore(gtagScript, firstScript);
+    gtag('consent', 'update', {
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'ad_storage': 'denied',
+      'analytics_storage': 'granted'
+    });
   }
