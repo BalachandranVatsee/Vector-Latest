@@ -1,47 +1,57 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Check if the user has accepted cookies before
-    if (localStorage.getItem("cookiesAccepted") !== "true") {
-      // Show the cookie popup if not accepted
-      document.getElementById("cookie-popup").style.display = "block";
-     
-    }else {
-      addGtag();
-    }
+  // Check if the user has accepted cookies before
+  if (localStorage.getItem("cookiesAccepted") !== "true") {
+    // Show the cookie popup if not accepted
+    document.getElementById("cookie-popup").style.display = "block";
 
-     if(sessionStorage.getItem("cookiesRejected") == "true"){
-      document.getElementById("cookie-popup").style.display = "none";
-      
-    }
-
-    
-  });
-  
-  function acceptCookies() {
-    // Set a flag in local storage to remember that the user has accepted cookies
-    localStorage.setItem("cookiesAccepted", "true");
-  
-    // Hide the cookie popup
-    document.getElementById("cookie-popup").style.display = "none";
-
+  } else {
     addGtag();
-    
-
   }
 
-  function closePopup() {
-    // Hide the cookie popup without storing in local storage
-    sessionStorage.setItem("cookiesRejected", "true");
+  if (sessionStorage.getItem("cookiesRejected") == "true") {
     document.getElementById("cookie-popup").style.display = "none";
+
   }
 
-  function addGtag(){
-    var grantButton = document.getElementById("accept-cookie");
+
+});
+
+function acceptCookies() {
+  // Set a flag in local storage to remember that the user has accepted cookies
+  localStorage.setItem("cookiesAccepted", "true");
+
+  // Hide the cookie popup
+  document.getElementById("cookie-popup").style.display = "none";
+
+  addGtag();
+
+
+}
+
+function closePopup() {
+  // Hide the cookie popup without storing in local storage
+  sessionStorage.setItem("cookiesRejected", "true");
+  document.getElementById("cookie-popup").style.display = "none";
+}
+
+function addGtag() {
+  // var addGoogleAnalytics = document.createElement("script");
+  // addGoogleAnalytics.setAttribute("src","https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9");
+  // addGoogleAnalytics.async = "true";
+  // document.head.appendChild(addGoogleAnalytics);
+
+  // var addDataLayer = document.createElement("script");
+  // var dataLayerData = document.createTextNode("window.dataLayer = window.dataLayer || []; \n function gtag(){dataLayer.push(arguments);} \n gtag('js', new Date()); \n gtag('config', 'G-Q7JQV3RHL9');");
+  // addDataLayer.appendChild(dataLayerData);
+  // document.head.appendChild(addDataLayer);
+  var grantButton = document.getElementById("accept-cookie");
  
     localStorage.setItem("cookiesAccepted", "true");
      // Load gtag.js script
      let gtagScript = document.createElement('script');
      gtagScript.async = true;
      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q7JQV3RHL9';
+
      let firstScript = document.getElementsByTagName('script')[0];
      firstScript.parentNode.insertBefore(gtagScript, firstScript);
     gtag('consent', 'update', {
@@ -50,4 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
       'ad_storage': 'denied',
       'analytics_storage': 'granted'
     });
-  }
+}
